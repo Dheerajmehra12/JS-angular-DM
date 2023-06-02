@@ -1,0 +1,56 @@
+<div class="cms-container">
+  <img class="cms-container-bg"
+       style="object-fit: cover;
+       z-index: -2;
+       position: fixed;
+       width: 100%;
+       height: 100%;
+       left: 0;
+       top: 0;"
+       src="./assets/images/backgroundImage.jpg">
+  <app-header class="cms-login-header"></app-header>
+  <div class="cms-login-body">
+    <div class="card shadow">
+      <form class="card-body" #loginForm="ngForm" autocomplete="off">
+        <h3 class="card-title text-cms-primary">{{'login.signIntoYourAccount' | translate}}</h3>
+        <div class="alert alert-danger" role="alert" *ngIf="model.errorMessage && model.errorMessage!==''">{{model.errorMessage}}</div>
+        <div class="form-group">
+          <label class="text-cms-dark" for="inputUserName">{{'login.userName' | translate}}</label>
+          <input class="form-control bg-light border-cms-secondary" id="inputUserName" autocomplete="off"
+                 [(ngModel)]="model.username" name="username" type="text" aria-describedby="userHelp" placeholder="User Name" required #username="ngModel">
+          <small id="userHelp" class="form-text text-danger" *ngIf="username.errors?.required && !username.pristine">{{'login.errorMsg.userName' | translate}}</small>
+        </div>
+        <div class="form-group">
+          <label class="text-cms-dark" for="inputPassword">{{'login.password' | translate}}</label>
+          <div class="input-group align-items-center border-cms-secondary text-cms-primary">
+            <input class="form-control bg-light border-cms-secondary border-right-0" id="inputPassword"
+                   autocomplete="off" name="password" [type]="passwordInputType" [(ngModel)]="model.password" aria-describedby="passwordHelp"
+                   placeholder="Password" #password="ngModel" required>
+            <a class="input-group-append px-2 btn bg-light border-cms-secondary btn-outline-cms-secondary"
+             (click)="showHidePassword()" [title]="getTooltipMsg()"
+            style="border-top-left-radius: 0; border-bottom-left-radius: 0;">
+            <svg [ngClass]="{'d-none':(passwordInputType==='password'),'d-block':(passwordInputType==='text')}" id="eye" viewBox="0 0 8 8" style="width: 1.5rem;">
+              <use xlink:href="css/bootstrap-icons.svg#eye"></use>
+            </svg>
+            <svg [ngClass]="{'d-block':(passwordInputType==='password'),'d-none':(passwordInputType==='text')}" id="eye-slash" viewBox="0 0 8 8" style="width: 1.5rem;">
+              <use xlink:href="css/bootstrap-icons.svg#eye-slash"></use>
+            </svg>
+          </a>
+          </div>
+          <small id="passwordHelp" class="form-text text-danger" *ngIf="password.errors?.required && !password.pristine">{{'login.errorMsg.password' | translate}}</small>
+        </div>
+        <div class="form-group" id="g-recaptcha"></div>
+        <div class="form-group">
+          <div class="form-inline">
+            <label class="custom-check-container" for="saveCredentials">
+              <input id="saveCredentials" type="checkbox" name="saveCredentials" #saveCredentials="ngModel" [(ngModel)]="model.saveCredentials" [checked]="model.saveCredentials"><span class="checkbox-cms-primary mt-n2"></span>
+            </label><span class="text-nowrap mt-1 text-cms-primary">{{'login.rememberMe' | translate}}</span>
+          </div>
+        </div>
+        <button [disabled]="(!loginForm.form.valid) || (!captchaVerified)" class="btn btn-cms-primary w-100 shadow-sm" type="button" (click)="signin()">{{'login.signIn' | translate}}
+        </button>
+      </form>
+    </div>
+  </div>
+  <app-footer class="cms-footer-container"></app-footer>
+</div>

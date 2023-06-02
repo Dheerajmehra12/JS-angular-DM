@@ -1,0 +1,34 @@
+<div class="col-12">
+  <div class="row">
+    <div class="col position-relative">
+      <a (click)="backbutton()" class="btn btn-cms-primary analytics-back-btn">{{'nav.back' | translate}}</a>
+      <h3 class="text-center text-cms-primary mb-0">{{activeTab | titlecase}} {{'summary.title' | translate}}</h3>
+      <div class="text-center text-black-50 mb-2">({{'analytics.dateLimit' | translate}})</div>
+    </div>
+  </div>
+  <div class="row flex-lg-nowrap" *ngIf="tabs">
+    <div class="col-md-12 justify-content-center">
+      <div class="row justify-content-center text-center">
+        <div class="border border-cms-primary"
+             *ngFor="let tab of tabs; let first = first; let last = last;"
+             id="report-{{tab.name}}" [class.active]="activeTab===tab.name"
+             [ngStyle]="first ? {'border-top-left-radius':'25px', 'border-bottom-left-radius':'25px'} :
+             last ? {'border-top-right-radius':'25px', 'border-bottom-right-radius':'25px'}: {}"
+             style="width:150px; cursor:pointer;" (click)="onTabClick(tab)">
+          <span>{{tab.label}}</span>
+        </div>
+      </div>
+      <div class="row align-items-center justify-content-end" *ngIf="pdfSupported || excelSupported">
+        <div class="col">
+          <div class="row align-items-center justify-content-end">
+            <div class="col-md-4 col-lg-4 col-xl-2 text-right py-1">
+              <span style="cursor: pointer;" id="PDF_Report" *ngIf="pdfSupported" (click)="exportPdf(pdfIcon)" #pdfIcon><img alt="Export to PDF" [title]="pdfTitle('pdf')" src="https://cdn.cmcd1.com/magnet/assets/images/pdf-icon.png" style="width: 2rem; margin-left: 0.5rem;"></span>
+              <span style="cursor: pointer;" id="Excel_Report" *ngIf="excelSupported" (click)="exportExcel(excelIcon)" #excelIcon><img alt="Export to Excel" [title]="pdfTitle('excel')" src="https://cdn.cmcd1.com/magnet/assets/images/excel-xls-icon.png" style="width: 2rem; margin-left: 0.5rem;"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="w-100 my-1">
+  </div>
+</div>

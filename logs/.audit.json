@@ -1,0 +1,10 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 7
+    },
+    "auditLog": "/media/dheerajmehra/New Volume/github/ctv/logs/.audit.json",
+    "files": [
+        
+    ]
+}

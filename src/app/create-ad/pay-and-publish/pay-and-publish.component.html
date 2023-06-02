@@ -1,0 +1,91 @@
+<app-step-nav (stepChange)="stepChanged($event)"></app-step-nav>
+<div class="h3 font-weight-bold">{{'payment.title' | translate}} &amp; {{'payment.preview' | translate}}</div>
+<hr class="w-100 border-dark">
+<div class="h4 text-center" style="text-decoration: underline;">{{'payment.payInfo' | translate}}</div>
+<div class="text-center h6">
+  <svg class="bi bi-lock-fill mr-1" width="1.2rem" height="1.2rem" fill="currentColor">
+    <use xlink:href="css/bootstrap-icons.svg#lock-fill"></use>
+  </svg>
+  <span>{{'payment.subInfo' | translate}}</span>
+</div>
+<div class="row">
+  <div class="col-xl-6">
+    <div>{{'payment.paySection' | translate}}</div>
+    <div class="card mt-2">
+      <div class="card-body shadow">
+        <div class="alert alert-danger" *ngIf="hasPaymentError">{{'payment.paymentFail' | translate}}. {{errors?.payment}}</div>
+        <form #paymentForm="ngForm" autocomplete="off">
+          <div class="form-group">
+            <label for="cardEmail">{{'payment.email' | translate}}</label>
+            <div id="cardEmail" class="form-control bg-light border-0">{{email}}</div>
+          </div>
+          <div class="form-group">
+            <label for="cardElement">{{'payment.credit' | translate}}</label>
+            <img src="https://s3.amazonaws.com/cd_cdn/magnet/assets/images/all_cards.png" alt="" class="float-right mt-1" height="14px">
+            <div id="cardElement"></div>
+            <div id="card-errors" class="form-text text-danger"></div>
+          </div>
+          <div class="form-group">
+            <label for="cardName">{{'payment.name' | translate}}</label>
+            <input type="text" id="cardName" name="cardName" class="form-control border-cms-primary shadow-sm" [(ngModel)]="nameOnCard" #cardName="ngModel" aria-describedby="card-name-errors" required>
+            <div id="card-name-errors" class="form-text text-danger" *ngIf="cardName.errors?.required  && !cardName.pristine">{{'payment.nameError' | translate}}</div>
+          </div>
+          <div class="form-group">
+            <label for="agreeTerms" class="custom-check-container">
+              <input type="checkbox" id="agreeTerms" [(ngModel)]="agreeTerms" name="agreeTerms" required>
+              <span class="checkbox-cms-primary"></span>
+            </label>
+            <span class="ml-4 pl-2">
+              {{'payment.terms' | translate}}&apos;s
+              <a style="text-decoration: underline;" href="https://www.chalkdigital.com/index.php/terms-and-conditions/" target="_blank" class="text-cms-dark"> T&amp;Cs</a>
+            </span>
+          </div>
+          <div class="form-group text-center">
+            <button [disabled]="!paymentForm.form.valid || !cardInputComplete" class="btn btn-lg btn-cms-primary" type="button" style="line-height: 1.25rem; width: 300px; max-width: 100%;" (click)="submitPayment()">{{'payment.submit' | translate}}</button>
+          </div>
+          <p class="text-cms-dark h6">{{'payment.tcInfo' | translate}}.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-6 mt-4 mt-xl-0">
+    <div>{{'payment.campPrev' | translate}}</div>
+    <div class="card mt-2">
+      <div class="card-body shadow" style="background-color: #f5f5f5;">
+        <div class="card-title">
+          <span>{{'payment.yourPlan' | translate}}</span>
+          <a routerLink="../../select-plan" class="float-right text-cms-primary">
+            <svg class="bi bi-pencil-square mr-1 float-right" width="1.2rem" height="1.2rem" fill="currentColor">
+              <use xlink:href="css/bootstrap-icons.svg#pencil-square"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="row">
+          <div class="col-6 text-right"><span class="text-black-50" style="display: inline-block;" class="border-cms-dark border-bottom"><span class="text-cms-primary font-weight-bold h4">{{paymentData?.selectedPlan?.pricing}}</span>/{{'payment.month' | translate}}</span></div>
+          <div class="col-6 text-left text-cms-primary"><span style="display: inline-block;" class="border-cms-dark border-bottom">{{paymentData?.selectedPlan?.title}}</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="card my-3">
+      <div class="card-body shadow" style="background-color: #f5f5f5;">
+        <div class="card-title">
+          <div class="row">
+            <div class="col-md-6">{{'payment.commercialPrev' | translate}}</div>
+            <div class="col-md-6 text-cms-primary">
+              <span *ngIf="paymentData && paymentData.campaignInfo" style="display: inline-block;" class="border-cms-dark border-bottom">{{paymentData.campaignInfo?.mediaTitle}}</span>
+              <a routerLink="../media" class="float-right text-cms-primary">
+                <svg class="bi bi-pencil-square mr-1 float-right" width="1.2rem" height="1.2rem" fill="currentColor">
+                  <use xlink:href="css/bootstrap-icons.svg#pencil-square"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row" *ngIf="paymentData?.footerBanner && paymentData?.campaignInfo?.videoUrl">
+          <app-player class="col-12 position-relative text-center" style="height: 56.25%;" [videoUrl]="paymentData?.campaignInfo?.videoUrl" [footerBannerUrl]="paymentData?.footerBanner" [showFooterBanner]="paymentData?.overlaybanner"></app-player>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-create-ad-footer [disableNext]="!paymentForm.valid || !cardInputComplete" nextButtonLabel="Submit Payment" (footerNext)="handleNext($event)" (footerPrevious)="handlePrevious($event)"></app-create-ad-footer>

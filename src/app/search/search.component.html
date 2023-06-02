@@ -1,0 +1,83 @@
+<div
+  class="border border-cms-primary p-1 rounded"
+  (click)="
+    inputSearch(searchContainerRef, inputControlRef, suggestionBoxDropdown)
+  "
+  #searchContainerRef
+>
+  <div class="row">
+    <div class="col-auto align-self-center">
+      <svg class="bi ml-2" width="16" height="16" fill="currentColor">
+        <use xlink:href="css/bootstrap-icons.svg#search"></use>
+      </svg>
+    </div>
+    <div class="col">
+      <div class="form-inline">
+        <div style="overflow: auto; max-height: 60px;">
+        <div style="width:fit-content" class="rounded-pill bg-cms-dark pl-2 py-1 m-1 text-white"
+        *ngFor="let tag of searchTags"
+        [attr.data-tag-value]="tag">
+          <span style="cursor: default"
+            >{{ tag.description }}&nbsp;{{ tag.value }}</span
+          ><a style="cursor:pointer"
+            class="pr-1 text-white text-decoration-none"
+            (click)="removeSearchTag(tag, inputControlRef)"
+          >
+            <svg width="16" height="16" fill="currentColor">
+              <use xlink:href="css/bootstrap-icons.svg#x"></use></svg>
+            </a>
+          </div>
+        </div>
+        <div class="position-relative">
+          <input style="width:188px"
+            class="form-control border-0 rounded-pill shadow-none"
+            #inputControlRef
+            (keyup)="
+              onSearchInput($event, inputControlRef, suggestionBoxDropdown)
+            "
+            (click)="onSearchFocus(suggestionBoxDropdown)"
+            name="searchTerm"
+            [(ngModel)]="searchTerm"
+            autocomplete="off"
+          />
+          <div
+            class="suggestionBox d-none dropdown-menu"
+            style="top: 100%; right: 0"
+            #suggestionBoxDropdown
+          ><div  *ngFor="let criteriaobj of criteriaList">
+            <div
+              class="dropdown-item text-wrap text-break"
+             
+              id="{{criteriaobj.description}}"
+              (click)="addSearchTag(criteriaobj, inputControlRef)"
+              [attr.data-tag-value]="criteriaobj.description"
+              [ngClass]="{ active: criteriaobj.matchesTypeField(this.selectedCriteria) }"
+             
+            >
+              {{ criteriaobj.description }}&nbsp;
+              <span
+                [ngClass]="{
+                  'text-white': criteriaobj.matchesTypeField(this.selectedCriteria),
+                  'text-black-50': !criteriaobj.matchesTypeField(this.selectedCriteria)
+                }"
+              >
+                {{ searchTerm }}
+              </span>
+             
+            </div>
+            <div class="dropdown-divider"></div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-auto align-self-center">
+      <a
+        class="text-black-50"
+        (click)="clearSearch(inputControlRef, suggestionBoxDropdown)"
+        *ngIf="searchTags.length > 0"
+        >{{'seachBox.clear' | translate}}</a
+      >
+    </div>
+  </div>
+</div>

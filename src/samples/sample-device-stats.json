@@ -1,0 +1,22 @@
+{
+  "status": 0,
+  "ecode": 0,
+  "edesc": null,
+  "response": [
+    {
+      "clicks": 43,
+      "impressions": 9292,
+      "device": "Android"
+    },
+    {
+      "clicks": 68,
+      "impressions": 15913,
+      "device": "iOS"
+    },
+    {
+      "clicks": 6,
+      "impressions": 51,
+      "device": "Other"
+    }
+  ]
+}

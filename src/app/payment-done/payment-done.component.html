@@ -1,0 +1,17 @@
+<div class="cms-container">
+  <app-header class="cms-login-header"></app-header>
+  <div class="container-fluid my-auto text-center d-flex flex-column align-items-center">
+    <div class="col-lg-8 shadow-lg p-5 rounded">
+      <h3 class="page-text-title">
+        {{'payment.cong' | translate}} {{agentInfo.firstName}} {{agentInfo.lastName}}!
+      </h3>
+      <div class="h4 my-4">
+        {{'payment.reqComplete' | translate}}.
+      </div>
+      <button class="btn btn-lg btn-cms-primary" (click)="onDone()">
+        {{'payment.done' | translate}}
+      </button>
+    </div>
+  </div>
+  <app-footer class="cms-footer-container"></app-footer>
+</div>

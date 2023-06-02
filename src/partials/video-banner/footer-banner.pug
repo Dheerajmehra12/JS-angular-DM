@@ -1,0 +1,121 @@
+doctype true
+head
+  meta(http-equiv='Content-Type' content='text/html; charset=UTF-8')
+  title  Video Banner
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  style.
+    html {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      font-size: 100%;
+      font-family: 'Arial', sans-serif;
+      line-height: 1.15;
+    }
+
+    *, *:before, *:after {
+      -webkit-box-sizing: inherit;
+      -moz-box-sizing: inherit;
+      box-sizing: inherit;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+    .footer {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      overflow: hidden;
+      background-color: #670038;
+    }
+    .parentDiv {
+      width: 1920px;
+      height: 180px;
+      color: #fff;
+    }
+    .headShot {
+      max-width: 12%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      padding-right: 0.1875rem;
+    }
+    .headShot img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: left;
+    }
+    .agentDetails {
+      font-size: 3rem;
+      width: auto;
+      padding-left: 0.1875rem;
+      padding-right: 0.1875rem;
+      font-weight: 300;
+      text-align: left;
+      font-family: Manrope, Arial;
+      display: flex;
+      justify-self: start;
+      flex-direction: column;
+    }
+    .agentName {
+      font-weight: 700;
+      text-transform: uppercase;
+      font-family: Manrope, Arial;
+    }
+    .verticalLine {
+      background: #fff;
+      height: 144px;
+      width: 4px;
+      border-radius: 4px;
+      margin-left: 28px;
+    }
+
+    .tagLine {
+      font-weight: 700;
+      font-size: 3rem;
+      text-transform: uppercase;
+      font-family: Manrope, Arial;
+      padding-left: 50px;
+      max-width: 48.84375%;
+    }
+    .officeLogo {
+      font-family: "Manrope", Arial;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      width: 18.4375%;
+      height: 100%;
+    }
+    .officeLogoUrl {
+      width: 100%;
+      height: 100%;
+    }
+    .officeLogoUrl img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+      filter: hue-rotate(0) saturate(0) brightness(1);
+      -webkit-filter: hue-rotate(0) saturate(0) brightness(1);
+    }
+.parentDiv
+  .footer
+    if model.headShot && model.headShot !== ''
+      .headShot
+        img(src=model.headShot)
+    .agentDetails
+      .agentName #{model.name}
+      div #{model.mobile}
+    .verticalLine
+    .tagLine
+      div To find your dream home call or text today.
+    .officeLogo
+      .officeLogoUrl
+        img(src=model.officeLogo)

@@ -1,0 +1,35 @@
+<div class="brand-container">
+  <div class="logo-brand">
+    <a [routerLink]="getHomePage()"><img id="brand-logo" class="mw-100" [src]="theme?.themeData?.logo" alt=""></a>
+  </div>
+  <div class="logo-brand-circle">
+    <a [routerLink]="getHomePage()"><img id="brand-logo-circle" class="mw-100" [src]="theme?.themeData?.logoSmall" alt=""></a>
+  </div>
+  <div class="nav-title" *ngIf="displayProfileMenu()">
+    <h3><span class="text-cms-light" >{{loggedInTitleText}}</span></h3>
+  </div>
+  <div class="nav-brand" [hidden]=" false && !menuEnabled"> <!--currently set false-->
+    <div class="row flex-nowrap align-items-center justify-content-end">
+      <img id="profile-img" alt="" [src]="agentInfo.agentPhoto" *ngIf="agentInfo.agentPhoto">
+      <div class="px-2 text-cms-light text-center ng-binding">{{'header.welcome' | translate}}<br>*****</div>
+      <div class="dropdown mr-2" id="profile_dropdown" #profileDropdown>
+        <a class="btn bg-transparent border-0 btn-outline-cms-light shadow-none text-cms-light rounded-0 px-0"
+           title="More" href="" data-toggle="dropdown">
+          <svg class="bi"(click)="hidelanguageDropdown()" width="1.5rem" height="1.5rem" fill="currentColor">
+            <use xlink:href="css/bootstrap-icons.svg#list"></use>
+          </svg>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right">
+          <a class="dropdown-item" id="view-campaigns" routerLink="../campaign-list"><span>{{campaignMenuText}}</span></a>
+          <a class="dropdown-item dropbtn" id="profile" *ngIf="displayProfileMenu()" (click)="showProfile()"><span>{{getMenuText()}}</span></a>
+          <button class="dropdown-item" id="dashboard" routerLink="../campaign-list/my/dashboard"><span>{{'header.dashboard' | translate}}</span></button>
+          <button class="dropdown-item" id="switch-app" (click)="getBhhsOneUrl()"><span>{{'header.switch' | translate}}</span></button>
+          <button *ngIf="!hideLanguageOptionFromMenu" class="dropdown-item dropbtn" id="language" (click)="lang()"><span>{{'header.language' | translate}}</span></button>
+          <div *ngIf="!hideLanguageOptionFromMenu" id="myDropdown"  class="dropdown-content">
+            <a class="languageLink" *ngFor="let language of languages" [ngClass]="{'defalut_language': defaultlanguage(language.languagekey)}" (click)="langSelected(language.languagekey)">{{language.Name | translate }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

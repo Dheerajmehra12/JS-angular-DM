@@ -1,0 +1,7 @@
+<div id="spinner-container" class="container-fluid position-fixed d-flex justify-content-center vh-100 bg-white" style="left: 0; top: 0; opacity: 50%; z-index: 99999;" [ngClass]="{'d-flex':show,'d-none':!show}">
+  <div class="row my-auto align-items-center" [hidden]="!show">
+    <div class="spinner-border text-cms-primary" role="status" [hidden]="!show">
+      <span class="sr-only" [hidden]="!show">Loading...</span>
+    </div>
+  </div>
+</div>

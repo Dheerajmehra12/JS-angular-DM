@@ -1,0 +1,140 @@
+{
+  "tpl-br0004": {
+    "editable": false,
+    "editableValues": {
+      "tagLine1": "Determine your real estate needs and lifestyle goals."
+    },
+    "inputLimits": {
+      "tagLine1": 53
+    }
+  },
+  "tpl-br0005": {
+    "editable": true,
+    "editableValues": {
+      "tagLine1": "Let’s get your home sold!",
+      "tagLine2": "I’m your neighborhood real estate expert. You’ll find there’s nobody more qualified to help you sell your home."
+    },
+    "inputLimits": {
+      "tagLine1": 25,
+      "tagLine2": 112
+    }
+  },
+  "tpl-br0006": {
+    "editable": false,
+    "editableValues": {
+      "tagLine1": "Selecting the right agent is the first step to making the best sale of a home."
+    },
+    "inputLimits": {
+      "tagLine1": 78
+    }
+  },
+  "tpl-br0007": {
+    "editable": false,
+    "editableValues": {
+      "tagLine1": "When selling your home don’t select a price until you select the right pricing strategy"
+    },
+    "inputLimits": {
+      "tagLine1": 87
+    }
+  },
+  "tpl-br0008": {
+    "editable": false,
+    "editableValues": {
+      "tagLine1": "What is your home really worth?"
+    },
+    "inputLimits": {
+      "tagLine1": 31
+    }
+  },
+  "tpl-br0009": {
+    "editable": true,
+    "editableValues": {
+      "tagLine1": "Reach out to your forever agent because they know your neighborhood best."
+    },
+    "inputLimits": {
+      "tagLine1": 74
+    }
+  },
+  "tpl-br0010": {
+    "editable": true,
+    "editableValues": {
+      "tagLine1": "It's virtually possible",
+      "tagLine2": "Click here to visit my website"
+    },
+    "inputLimits": {
+      "tagLine1": 23,
+      "tagLine2": 36
+    }
+  },
+  "tpl-br0011": {
+    "editable": true,
+    "editableValues": {
+      "tagLine1": "Stay Connected With Us",
+      "tagLine2": "Click here to visit my website"
+    },
+    "inputLimits": {
+      "tagLine1": 22,
+      "tagLine2": 36
+    }
+  },
+  "tpl-br0012": {
+    "editable": true,
+    "editableValues": {
+      "tagLine1": "Now, more than ever...",
+      "tagLine2": "Reach out to your forever agent because they know your neighborhood best."
+    },
+    "inputLimits": {
+      "tagLine1": 22,
+      "tagLine2": 73
+    }
+  },
+  "tpl-br0013": {
+    "editable": true,
+    "editableValues": {
+      "tagLine1": "Is it time to downsize or \"right-size\"?",
+      "tagLine2": "Contact me to learn more."
+    },
+    "inputLimits": {
+      "tagLine1": 39,
+      "tagLine2": 25
+    }
+  },
+  "tpl-rc0001": {
+    "editable": true,
+    "editableValues": {
+      "tagLine1": "Be known for the company you keep",
+      "tagLine2": "Join a brokerage with a trusted and respected name."
+    },
+    "inputLimits": {
+      "tagLine1": 33,
+      "tagLine2": 51
+    }
+  },
+  "tpl-rc0002": {
+    "editable": true,
+    "editableValues": {
+      "tagLine1": "Put the berkshire hathaway homeservices name behind yours"
+    },
+    "inputLimits": {
+      "tagLine1": 57
+    }
+  },
+  "tpl-rc0003": {
+    "editable": true,
+    "editableValues": {
+      "tagLine1": "Relationships over transactions"
+    },
+    "inputLimits": {
+      "tagLine1": 31
+    }
+  },
+  "tpl-rc0004": {
+    "editable": true,
+    "editableValues": {
+      "tagLine1": "The greatest real estate technology ever created: our network agents"
+    },
+    "inputLimits": {
+      "tagLine1": 68
+    }
+  }
+}

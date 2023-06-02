@@ -1,0 +1,1711 @@
+{
+  "status": 0,
+  "ecode": 0,
+  "edesc": null,
+  "response": [
+    {
+      "clicks": 8,
+      "lon": -122.186144683,
+      "impressions": 255,
+      "lat": 47.6794078529
+    },
+    {
+      "clicks": 0,
+      "lon": -122.187590354,
+      "impressions": 8,
+      "lat": 47.6721794946
+    },
+    {
+      "clicks": 0,
+      "lon": -122.186144683,
+      "impressions": 1,
+      "lat": 47.6750708379
+    },
+    {
+      "clicks": 0,
+      "lon": -122.193373041,
+      "impressions": 2,
+      "lat": 47.6822991962
+    },
+    {
+      "clicks": 0,
+      "lon": -122.203492743,
+      "impressions": 1,
+      "lat": 47.666396808
+    },
+    {
+      "clicks": 0,
+      "lon": -122.200601399,
+      "impressions": 29,
+      "lat": 47.6736251663
+    },
+    {
+      "clicks": 0,
+      "lon": -122.204938414,
+      "impressions": 1,
+      "lat": 47.6678424796
+    },
+    {
+      "clicks": 0,
+      "lon": -122.193373041,
+      "impressions": 1,
+      "lat": 47.6750708379
+    },
+    {
+      "clicks": 0,
+      "lon": -122.196264384,
+      "impressions": 11,
+      "lat": 47.6779621812
+    },
+    {
+      "clicks": 0,
+      "lon": -122.171687966,
+      "impressions": 1,
+      "lat": 47.6822991962
+    },
+    {
+      "clicks": 0,
+      "lon": -122.177470653,
+      "impressions": 4,
+      "lat": 47.6996472561
+    },
+    {
+      "clicks": 0,
+      "lon": -122.202047071,
+      "impressions": 3,
+      "lat": 47.6779621812
+    },
+    {
+      "clicks": 0,
+      "lon": -122.196264384,
+      "impressions": 1,
+      "lat": 47.6649511363
+    },
+    {
+      "clicks": 1,
+      "lon": -122.209275429,
+      "impressions": 3,
+      "lat": 47.6808535245
+    },
+    {
+      "clicks": 0,
+      "lon": -122.176024981,
+      "impressions": 10,
+      "lat": 47.6851905395
+    },
+    {
+      "clicks": 0,
+      "lon": -122.180361996,
+      "impressions": 5,
+      "lat": 47.7083212861
+    },
+    {
+      "clicks": 1,
+      "lon": -122.204938414,
+      "impressions": 2,
+      "lat": 47.6736251663
+    },
+    {
+      "clicks": 0,
+      "lon": -122.207829758,
+      "impressions": 6,
+      "lat": 47.6808535245
+    },
+    {
+      "clicks": 0,
+      "lon": -122.191927369,
+      "impressions": 1,
+      "lat": 47.6721794946
+    },
+    {
+      "clicks": 0,
+      "lon": -122.204938414,
+      "impressions": 14,
+      "lat": 47.649048748
+    },
+    {
+      "clicks": 0,
+      "lon": -122.199155728,
+      "impressions": 1,
+      "lat": 47.6692881513
+    },
+    {
+      "clicks": 0,
+      "lon": -122.200601399,
+      "impressions": 1,
+      "lat": 47.666396808
+    },
+    {
+      "clicks": 0,
+      "lon": -122.184699011,
+      "impressions": 1,
+      "lat": 47.6779621812
+    },
+    {
+      "clicks": 0,
+      "lon": -122.196264384,
+      "impressions": 3,
+      "lat": 47.6808535245
+    },
+    {
+      "clicks": 0,
+      "lon": -122.180361996,
+      "impressions": 7,
+      "lat": 47.7010929278
+    },
+    {
+      "clicks": 0,
+      "lon": -122.200601399,
+      "impressions": 5,
+      "lat": 47.6765165096
+    },
+    {
+      "clicks": 0,
+      "lon": -122.206384086,
+      "impressions": 3,
+      "lat": 47.6504944197
+    },
+    {
+      "clicks": 0,
+      "lon": -122.200601399,
+      "impressions": 3,
+      "lat": 47.6779621812
+    },
+    {
+      "clicks": 0,
+      "lon": -122.199155728,
+      "impressions": 7,
+      "lat": 47.6750708379
+    },
+    {
+      "clicks": 0,
+      "lon": -122.18325334,
+      "impressions": 6,
+      "lat": 47.6895275545
+    },
+    {
+      "clicks": 0,
+      "lon": -122.190481698,
+      "impressions": 1,
+      "lat": 47.6837448679
+    },
+    {
+      "clicks": 0,
+      "lon": -122.200601399,
+      "impressions": 1,
+      "lat": 47.6692881513
+    },
+    {
+      "clicks": 0,
+      "lon": -122.202047071,
+      "impressions": 1,
+      "lat": 47.6808535245
+    },
+    {
+      "clicks": 0,
+      "lon": -122.194818713,
+      "impressions": 2,
+      "lat": 47.6678424796
+    },
+    {
+      "clicks": 0,
+      "lon": -122.203492743,
+      "impressions": 3,
+      "lat": 47.6476030764
+    },
+    {
+      "clicks": 0,
+      "lon": -122.209275429,
+      "impressions": 3,
+      "lat": 47.6562771063
+    },
+    {
+      "clicks": 0,
+      "lon": -122.180361996,
+      "impressions": 6,
+      "lat": 47.7097669577
+    },
+    {
+      "clicks": 0,
+      "lon": -122.196264384,
+      "impressions": 2,
+      "lat": 47.6837448679
+    },
+    {
+      "clicks": 0,
+      "lon": -122.173133638,
+      "impressions": 3,
+      "lat": 47.6837448679
+    },
+    {
+      "clicks": 0,
+      "lon": -122.209275429,
+      "impressions": 7,
+      "lat": 47.6765165096
+    },
+    {
+      "clicks": 0,
+      "lon": -122.178916325,
+      "impressions": 6,
+      "lat": 47.6837448679
+    },
+    {
+      "clicks": 0,
+      "lon": -122.197710056,
+      "impressions": 1,
+      "lat": 47.6822991962
+    },
+    {
+      "clicks": 0,
+      "lon": -122.206384086,
+      "impressions": 11,
+      "lat": 47.657722778
+    },
+    {
+      "clicks": 1,
+      "lon": -122.203492743,
+      "impressions": 4,
+      "lat": 47.6750708379
+    },
+    {
+      "clicks": 0,
+      "lon": -122.202047071,
+      "impressions": 13,
+      "lat": 47.6750708379
+    },
+    {
+      "clicks": 0,
+      "lon": -122.207829758,
+      "impressions": 8,
+      "lat": 47.6765165096
+    },
+    {
+      "clicks": 0,
+      "lon": -122.196264384,
+      "impressions": 6,
+      "lat": 47.6765165096
+    },
+    {
+      "clicks": 0,
+      "lon": -122.200601399,
+      "impressions": 17,
+      "lat": 47.6707338229
+    },
+    {
+      "clicks": 0,
+      "lon": -122.173133638,
+      "impressions": 1,
+      "lat": 47.6851905395
+    },
+    {
+      "clicks": 0,
+      "lon": -122.200601399,
+      "impressions": 4,
+      "lat": 47.6504944197
+    },
+    {
+      "clicks": 1,
+      "lon": -122.204938414,
+      "impressions": 37,
+      "lat": 47.657722778
+    },
+    {
+      "clicks": 0,
+      "lon": -122.199155728,
+      "impressions": 1,
+      "lat": 47.6504944197
+    },
+    {
+      "clicks": 0,
+      "lon": -122.197710056,
+      "impressions": 3,
+      "lat": 47.6678424796
+    },
+    {
+      "clicks": 0,
+      "lon": -122.203492743,
+      "impressions": 5,
+      "lat": 47.6461574047
+    },
+    {
+      "clicks": 0,
+      "lon": -122.194818713,
+      "impressions": 2,
+      "lat": 47.6808535245
+    },
+    {
+      "clicks": 0,
+      "lon": -122.184699011,
+      "impressions": 5,
+      "lat": 47.6851905395
+    },
+    {
+      "clicks": 0,
+      "lon": -122.194818713,
+      "impressions": 6,
+      "lat": 47.6635054646
+    },
+    {
+      "clicks": 0,
+      "lon": -122.176024981,
+      "impressions": 1,
+      "lat": 47.6909732262
+    },
+    {
+      "clicks": 0,
+      "lon": -122.193373041,
+      "impressions": 29,
+      "lat": 47.666396808
+    },
+    {
+      "clicks": 0,
+      "lon": -122.178916325,
+      "impressions": 1,
+      "lat": 47.7010929278
+    },
+    {
+      "clicks": 0,
+      "lon": -122.176024981,
+      "impressions": 11,
+      "lat": 47.7068756144
+    },
+    {
+      "clicks": 0,
+      "lon": -122.181807668,
+      "impressions": 1,
+      "lat": 47.6822991962
+    },
+    {
+      "clicks": 0,
+      "lon": -122.206384086,
+      "impressions": 2,
+      "lat": 47.6721794946
+    },
+    {
+      "clicks": 0,
+      "lon": -122.206384086,
+      "impressions": 4,
+      "lat": 47.6692881513
+    },
+    {
+      "clicks": 0,
+      "lon": -122.203492743,
+      "impressions": 1,
+      "lat": 47.649048748
+    },
+    {
+      "clicks": 0,
+      "lon": -122.202047071,
+      "impressions": 10,
+      "lat": 47.6851905395
+    },
+    {
+      "clicks": 0,
+      "lon": -122.176024981,
+      "impressions": 8,
+      "lat": 47.7097669577
+    },
+    {
+      "clicks": 0,
+      "lon": -122.178916325,
+      "impressions": 22,
+      "lat": 47.7097669577
+    },
+    {
+      "clicks": 0,
+      "lon": -122.207829758,
+      "impressions": 16,
+      "lat": 47.657722778
+    },
+    {
+      "clicks": 0,
+      "lon": -122.204938414,
+      "impressions": 2,
+      "lat": 47.653385763
+    },
+    {
+      "clicks": 0,
+      "lon": -122.184699011,
+      "impressions": 4,
+      "lat": 47.6837448679
+    },
+    {
+      "clicks": 0,
+      "lon": -122.199155728,
+      "impressions": 1,
+      "lat": 47.6649511363
+    },
+    {
+      "clicks": 0,
+      "lon": -122.196264384,
+      "impressions": 1,
+      "lat": 47.666396808
+    },
+    {
+      "clicks": 0,
+      "lon": -122.178916325,
+      "impressions": 2,
+      "lat": 47.6779621812
+    },
+    {
+      "clicks": 0,
+      "lon": -122.193373041,
+      "impressions": 4,
+      "lat": 47.6692881513
+    },
+    {
+      "clicks": 0,
+      "lon": -122.197710056,
+      "impressions": 12,
+      "lat": 47.666396808
+    },
+    {
+      "clicks": 1,
+      "lon": -122.180361996,
+      "impressions": 28,
+      "lat": 47.6909732262
+    },
+    {
+      "clicks": 0,
+      "lon": -122.173133638,
+      "impressions": 10,
+      "lat": 47.7068756144
+    },
+    {
+      "clicks": 0,
+      "lon": -122.209275429,
+      "impressions": 1,
+      "lat": 47.6750708379
+    },
+    {
+      "clicks": 0,
+      "lon": -122.207829758,
+      "impressions": 5,
+      "lat": 47.6562771063
+    },
+    {
+      "clicks": 0,
+      "lon": -122.207829758,
+      "impressions": 2,
+      "lat": 47.6837448679
+    },
+    {
+      "clicks": 0,
+      "lon": -122.173133638,
+      "impressions": 2,
+      "lat": 47.7054299428
+    },
+    {
+      "clicks": 0,
+      "lon": -122.178916325,
+      "impressions": 3,
+      "lat": 47.7083212861
+    },
+    {
+      "clicks": 0,
+      "lon": -122.210721101,
+      "impressions": 15,
+      "lat": 47.6808535245
+    },
+    {
+      "clicks": 0,
+      "lon": -122.181807668,
+      "impressions": 1,
+      "lat": 47.6982015845
+    },
+    {
+      "clicks": 0,
+      "lon": -122.171687966,
+      "impressions": 8,
+      "lat": 47.6794078529
+    },
+    {
+      "clicks": 0,
+      "lon": -122.177470653,
+      "impressions": 2,
+      "lat": 47.6880818828
+    },
+    {
+      "clicks": 0,
+      "lon": -122.176024981,
+      "impressions": 3,
+      "lat": 47.6808535245
+    },
+    {
+      "clicks": 0,
+      "lon": -122.204938414,
+      "impressions": 5,
+      "lat": 47.6794078529
+    },
+    {
+      "clicks": 0,
+      "lon": -122.204938414,
+      "impressions": 1,
+      "lat": 47.6461574047
+    },
+    {
+      "clicks": 0,
+      "lon": -122.178916325,
+      "impressions": 2,
+      "lat": 47.6982015845
+    },
+    {
+      "clicks": 1,
+      "lon": -122.206384086,
+      "impressions": 9,
+      "lat": 47.6779621812
+    },
+    {
+      "clicks": 0,
+      "lon": -122.203492743,
+      "impressions": 1,
+      "lat": 47.6837448679
+    },
+    {
+      "clicks": 0,
+      "lon": -122.181807668,
+      "impressions": 30,
+      "lat": 47.6794078529
+    },
+    {
+      "clicks": 0,
+      "lon": -122.200601399,
+      "impressions": 2,
+      "lat": 47.6837448679
+    },
+    {
+      "clicks": 0,
+      "lon": -122.18325334,
+      "impressions": 16,
+      "lat": 47.7054299428
+    },
+    {
+      "clicks": 0,
+      "lon": -122.181807668,
+      "impressions": 14,
+      "lat": 47.7010929278
+    },
+    {
+      "clicks": 6,
+      "lon": -122.209275429,
+      "impressions": 745,
+      "lat": 47.6822991962
+    },
+    {
+      "clicks": 1,
+      "lon": -122.202047071,
+      "impressions": 10,
+      "lat": 47.6721794946
+    },
+    {
+      "clicks": 0,
+      "lon": -122.177470653,
+      "impressions": 18,
+      "lat": 47.6851905395
+    },
+    {
+      "clicks": 0,
+      "lon": -122.199155728,
+      "impressions": 1,
+      "lat": 47.666396808
+    },
+    {
+      "clicks": 0,
+      "lon": -122.209275429,
+      "impressions": 1,
+      "lat": 47.6779621812
+    },
+    {
+      "clicks": 1,
+      "lon": -122.210721101,
+      "impressions": 3,
+      "lat": 47.6851905395
+    },
+    {
+      "clicks": 0,
+      "lon": -122.190481698,
+      "impressions": 1,
+      "lat": 47.6808535245
+    },
+    {
+      "clicks": 0,
+      "lon": -122.202047071,
+      "impressions": 1,
+      "lat": 47.6822991962
+    },
+    {
+      "clicks": 0,
+      "lon": -122.191927369,
+      "impressions": 1,
+      "lat": 47.6808535245
+    },
+    {
+      "clicks": 0,
+      "lon": -122.203492743,
+      "impressions": 2,
+      "lat": 47.6678424796
+    },
+    {
+      "clicks": 0,
+      "lon": -122.207829758,
+      "impressions": 2,
+      "lat": 47.6866362112
+    },
+    {
+      "clicks": 0,
+      "lon": -122.171687966,
+      "impressions": 1,
+      "lat": 47.7054299428
+    },
+    {
+      "clicks": 0,
+      "lon": -122.180361996,
+      "impressions": 1,
+      "lat": 47.6967559128
+    },
+    {
+      "clicks": 0,
+      "lon": -122.200601399,
+      "impressions": 155,
+      "lat": 47.6721794946
+    },
+    {
+      "clicks": 0,
+      "lon": -122.204938414,
+      "impressions": 1,
+      "lat": 47.6895275545
+    },
+    {
+      "clicks": 0,
+      "lon": -122.186144683,
+      "impressions": 1,
+      "lat": 47.6707338229
+    },
+    {
+      "clicks": 0,
+      "lon": -122.171687966,
+      "impressions": 3,
+      "lat": 47.7025385994
+    },
+    {
+      "clicks": 0,
+      "lon": -122.176024981,
+      "impressions": 20,
+      "lat": 47.7025385994
+    },
+    {
+      "clicks": 0,
+      "lon": -122.206384086,
+      "impressions": 4,
+      "lat": 47.6707338229
+    },
+    {
+      "clicks": 0,
+      "lon": -122.196264384,
+      "impressions": 1,
+      "lat": 47.6721794946
+    },
+    {
+      "clicks": 0,
+      "lon": -122.200601399,
+      "impressions": 3,
+      "lat": 47.6476030764
+    },
+    {
+      "clicks": 0,
+      "lon": -122.171687966,
+      "impressions": 37,
+      "lat": 47.6779621812
+    },
+    {
+      "clicks": 0,
+      "lon": -122.184699011,
+      "impressions": 2,
+      "lat": 47.6765165096
+    },
+    {
+      "clicks": 1,
+      "lon": -122.203492743,
+      "impressions": 1,
+      "lat": 47.6721794946
+    },
+    {
+      "clicks": 2,
+      "lon": -122.204938414,
+      "impressions": 54,
+      "lat": 47.6765165096
+    },
+    {
+      "clicks": 0,
+      "lon": -122.173133638,
+      "impressions": 2,
+      "lat": 47.6909732262
+    },
+    {
+      "clicks": 0,
+      "lon": -122.177470653,
+      "impressions": 8,
+      "lat": 47.7025385994
+    },
+    {
+      "clicks": 0,
+      "lon": -122.210721101,
+      "impressions": 1,
+      "lat": 47.6822991962
+    },
+    {
+      "clicks": 0,
+      "lon": -122.191927369,
+      "impressions": 345,
+      "lat": 47.6779621812
+    },
+    {
+      "clicks": 0,
+      "lon": -122.184699011,
+      "impressions": 2,
+      "lat": 47.7039842711
+    },
+    {
+      "clicks": 0,
+      "lon": -122.180361996,
+      "impressions": 1,
+      "lat": 47.7068756144
+    },
+    {
+      "clicks": 0,
+      "lon": -122.181807668,
+      "impressions": 1,
+      "lat": 47.7068756144
+    },
+    {
+      "clicks": 0,
+      "lon": -122.193373041,
+      "impressions": 1,
+      "lat": 47.6649511363
+    },
+    {
+      "clicks": 0,
+      "lon": -122.199155728,
+      "impressions": 44,
+      "lat": 47.6794078529
+    },
+    {
+      "clicks": 0,
+      "lon": -122.181807668,
+      "impressions": 3,
+      "lat": 47.7083212861
+    },
+    {
+      "clicks": 0,
+      "lon": -122.203492743,
+      "impressions": 31,
+      "lat": 47.6765165096
+    },
+    {
+      "clicks": 0,
+      "lon": -122.193373041,
+      "impressions": 2,
+      "lat": 47.6808535245
+    },
+    {
+      "clicks": 0,
+      "lon": -122.18325334,
+      "impressions": 5,
+      "lat": 47.6851905395
+    },
+    {
+      "clicks": 0,
+      "lon": -122.176024981,
+      "impressions": 9,
+      "lat": 47.7039842711
+    },
+    {
+      "clicks": 0,
+      "lon": -122.197710056,
+      "impressions": 5,
+      "lat": 47.6808535245
+    },
+    {
+      "clicks": 0,
+      "lon": -122.180361996,
+      "impressions": 21,
+      "lat": 47.7025385994
+    },
+    {
+      "clicks": 0,
+      "lon": -122.189036026,
+      "impressions": 2,
+      "lat": 47.6808535245
+    },
+    {
+      "clicks": 0,
+      "lon": -122.206384086,
+      "impressions": 2,
+      "lat": 47.6736251663
+    },
+    {
+      "clicks": 0,
+      "lon": -122.196264384,
+      "impressions": 1,
+      "lat": 47.6736251663
+    },
+    {
+      "clicks": 0,
+      "lon": -122.18325334,
+      "impressions": 2,
+      "lat": 47.6866362112
+    },
+    {
+      "clicks": 0,
+      "lon": -122.180361996,
+      "impressions": 4,
+      "lat": 47.6794078529
+    },
+    {
+      "clicks": 0,
+      "lon": -122.176024981,
+      "impressions": 7,
+      "lat": 47.7083212861
+    },
+    {
+      "clicks": 0,
+      "lon": -122.203492743,
+      "impressions": 2,
+      "lat": 47.6808535245
+    },
+    {
+      "clicks": 0,
+      "lon": -122.199155728,
+      "impressions": 12,
+      "lat": 47.6765165096
+    },
+    {
+      "clicks": 0,
+      "lon": -122.181807668,
+      "impressions": 2,
+      "lat": 47.6808535245
+    },
+    {
+      "clicks": 0,
+      "lon": -122.194818713,
+      "impressions": 1,
+      "lat": 47.6794078529
+    },
+    {
+      "clicks": 0,
+      "lon": -122.180361996,
+      "impressions": 52,
+      "lat": 47.6808535245
+    },
+    {
+      "clicks": 0,
+      "lon": -122.207829758,
+      "impressions": 2,
+      "lat": 47.6721794946
+    },
+    {
+      "clicks": 0,
+      "lon": -122.18325334,
+      "impressions": 2,
+      "lat": 47.7083212861
+    },
+    {
+      "clicks": 0,
+      "lon": -122.190481698,
+      "impressions": 1,
+      "lat": 47.6707338229
+    },
+    {
+      "clicks": 0,
+      "lon": -122.196264384,
+      "impressions": 2,
+      "lat": 47.6678424796
+    },
+    {
+      "clicks": 0,
+      "lon": -122.173133638,
+      "impressions": 1,
+      "lat": 47.6794078529
+    },
+    {
+      "clicks": 0,
+      "lon": -122.191927369,
+      "impressions": 4,
+      "lat": 47.6678424796
+    },
+    {
+      "clicks": 1,
+      "lon": -122.206384086,
+      "impressions": 3,
+      "lat": 47.6794078529
+    },
+    {
+      "clicks": 0,
+      "lon": -122.206384086,
+      "impressions": 5,
+      "lat": 47.6562771063
+    },
+    {
+      "clicks": 0,
+      "lon": -122.177470653,
+      "impressions": 1,
+      "lat": 47.7083212861
+    },
+    {
+      "clicks": 0,
+      "lon": -122.177470653,
+      "impressions": 2,
+      "lat": 47.6982015845
+    },
+    {
+      "clicks": 0,
+      "lon": -122.181807668,
+      "impressions": 1,
+      "lat": 47.6895275545
+    },
+    {
+      "clicks": 0,
+      "lon": -122.186144683,
+      "impressions": 2,
+      "lat": 47.6678424796
+    },
+    {
+      "clicks": 0,
+      "lon": -122.184699011,
+      "impressions": 1,
+      "lat": 47.7068756144
+    },
+    {
+      "clicks": 1,
+      "lon": -122.186144683,
+      "impressions": 15,
+      "lat": 47.6765165096
+    },
+    {
+      "clicks": 0,
+      "lon": -122.177470653,
+      "impressions": 3,
+      "lat": 47.7054299428
+    },
+    {
+      "clicks": 10,
+      "lon": -122.187590354,
+      "impressions": 4236,
+      "lat": 47.6736251663
+    },
+    {
+      "clicks": 0,
+      "lon": -122.187590354,
+      "impressions": 14,
+      "lat": 47.6678424796
+    },
+    {
+      "clicks": 1,
+      "lon": -122.191927369,
+      "impressions": 3,
+      "lat": 47.6692881513
+    },
+    {
+      "clicks": 0,
+      "lon": -122.18325334,
+      "impressions": 1,
+      "lat": 47.6880818828
+    },
+    {
+      "clicks": 1,
+      "lon": -122.178916325,
+      "impressions": 3,
+      "lat": 47.6996472561
+    },
+    {
+      "clicks": 0,
+      "lon": -122.181807668,
+      "impressions": 3,
+      "lat": 47.7054299428
+    },
+    {
+      "clicks": 0,
+      "lon": -122.209275429,
+      "impressions": 9,
+      "lat": 47.6837448679
+    },
+    {
+      "clicks": 0,
+      "lon": -122.184699011,
+      "impressions": 1,
+      "lat": 47.6822991962
+    },
+    {
+      "clicks": 0,
+      "lon": -122.202047071,
+      "impressions": 35,
+      "lat": 47.6765165096
+    },
+    {
+      "clicks": 0,
+      "lon": -122.210721101,
+      "impressions": 1,
+      "lat": 47.6837448679
+    },
+    {
+      "clicks": 1,
+      "lon": -122.181807668,
+      "impressions": 10,
+      "lat": 47.7039842711
+    },
+    {
+      "clicks": 0,
+      "lon": -122.177470653,
+      "impressions": 37,
+      "lat": 47.6837448679
+    },
+    {
+      "clicks": 0,
+      "lon": -122.206384086,
+      "impressions": 44,
+      "lat": 47.6765165096
+    },
+    {
+      "clicks": 0,
+      "lon": -122.194818713,
+      "impressions": 1,
+      "lat": 47.6692881513
+    },
+    {
+      "clicks": 0,
+      "lon": -122.178916325,
+      "impressions": 22,
+      "lat": 47.7039842711
+    },
+    {
+      "clicks": 0,
+      "lon": -122.17457931,
+      "impressions": 11,
+      "lat": 47.7039842711
+    },
+    {
+      "clicks": 0,
+      "lon": -122.190481698,
+      "impressions": 3,
+      "lat": 47.6765165096
+    },
+    {
+      "clicks": 0,
+      "lon": -122.191927369,
+      "impressions": 1,
+      "lat": 47.6736251663
+    },
+    {
+      "clicks": 0,
+      "lon": -122.194818713,
+      "impressions": 3,
+      "lat": 47.6765165096
+    },
+    {
+      "clicks": 0,
+      "lon": -122.176024981,
+      "impressions": 1,
+      "lat": 47.6982015845
+    },
+    {
+      "clicks": 0,
+      "lon": -122.199155728,
+      "impressions": 2,
+      "lat": 47.6866362112
+    },
+    {
+      "clicks": 0,
+      "lon": -122.207829758,
+      "impressions": 3,
+      "lat": 47.6794078529
+    },
+    {
+      "clicks": 0,
+      "lon": -122.18325334,
+      "impressions": 2,
+      "lat": 47.7039842711
+    },
+    {
+      "clicks": 0,
+      "lon": -122.197710056,
+      "impressions": 2,
+      "lat": 47.6721794946
+    },
+    {
+      "clicks": 31,
+      "lon": -122.199155728,
+      "impressions": 515,
+      "lat": 47.6736251663
+    },
+    {
+      "clicks": 0,
+      "lon": -122.17457931,
+      "impressions": 8,
+      "lat": 47.7054299428
+    },
+    {
+      "clicks": 0,
+      "lon": -122.199155728,
+      "impressions": 1,
+      "lat": 47.653385763
+    },
+    {
+      "clicks": 1,
+      "lon": -122.194818713,
+      "impressions": 1,
+      "lat": 47.6822991962
+    },
+    {
+      "clicks": 0,
+      "lon": -122.206384086,
+      "impressions": 1,
+      "lat": 47.6548314347
+    },
+    {
+      "clicks": 0,
+      "lon": -122.202047071,
+      "impressions": 2,
+      "lat": 47.666396808
+    },
+    {
+      "clicks": 0,
+      "lon": -122.203492743,
+      "impressions": 1,
+      "lat": 47.6548314347
+    },
+    {
+      "clicks": 0,
+      "lon": -122.184699011,
+      "impressions": 1,
+      "lat": 47.7054299428
+    },
+    {
+      "clicks": 0,
+      "lon": -122.178916325,
+      "impressions": 4,
+      "lat": 47.6794078529
+    },
+    {
+      "clicks": 0,
+      "lon": -122.209275429,
+      "impressions": 2,
+      "lat": 47.6866362112
+    },
+    {
+      "clicks": 0,
+      "lon": -122.202047071,
+      "impressions": 5,
+      "lat": 47.6678424796
+    },
+    {
+      "clicks": 0,
+      "lon": -122.204938414,
+      "impressions": 2,
+      "lat": 47.6519400914
+    },
+    {
+      "clicks": 0,
+      "lon": -122.207829758,
+      "impressions": 4,
+      "lat": 47.6851905395
+    },
+    {
+      "clicks": 0,
+      "lon": -122.202047071,
+      "impressions": 5,
+      "lat": 47.6707338229
+    },
+    {
+      "clicks": 0,
+      "lon": -122.190481698,
+      "impressions": 1,
+      "lat": 47.6635054646
+    },
+    {
+      "clicks": 0,
+      "lon": -122.18325334,
+      "impressions": 1,
+      "lat": 47.6822991962
+    },
+    {
+      "clicks": 0,
+      "lon": -122.181807668,
+      "impressions": 2,
+      "lat": 47.6779621812
+    },
+    {
+      "clicks": 0,
+      "lon": -122.203492743,
+      "impressions": 2,
+      "lat": 47.6692881513
+    },
+    {
+      "clicks": 0,
+      "lon": -122.197710056,
+      "impressions": 4,
+      "lat": 47.6779621812
+    },
+    {
+      "clicks": 2,
+      "lon": -122.190481698,
+      "impressions": 92,
+      "lat": 47.6794078529
+    },
+    {
+      "clicks": 0,
+      "lon": -122.176024981,
+      "impressions": 4,
+      "lat": 47.7054299428
+    },
+    {
+      "clicks": 0,
+      "lon": -122.203492743,
+      "impressions": 2,
+      "lat": 47.6794078529
+    },
+    {
+      "clicks": 0,
+      "lon": -122.207829758,
+      "impressions": 5,
+      "lat": 47.6591684497
+    },
+    {
+      "clicks": 0,
+      "lon": -122.206384086,
+      "impressions": 1,
+      "lat": 47.6519400914
+    },
+    {
+      "clicks": 0,
+      "lon": -122.193373041,
+      "impressions": 9,
+      "lat": 47.6678424796
+    },
+    {
+      "clicks": 0,
+      "lon": -122.207829758,
+      "impressions": 1,
+      "lat": 47.6692881513
+    },
+    {
+      "clicks": 38,
+      "lon": -122.207829758,
+      "impressions": 17451,
+      "lat": 47.6822991962
+    },
+    {
+      "clicks": 0,
+      "lon": -122.177470653,
+      "impressions": 4,
+      "lat": 47.6808535245
+    },
+    {
+      "clicks": 0,
+      "lon": -122.191927369,
+      "impressions": 2,
+      "lat": 47.6707338229
+    },
+    {
+      "clicks": 0,
+      "lon": -122.197710056,
+      "impressions": 3,
+      "lat": 47.6707338229
+    },
+    {
+      "clicks": 0,
+      "lon": -122.193373041,
+      "impressions": 5,
+      "lat": 47.6765165096
+    },
+    {
+      "clicks": 0,
+      "lon": -122.206384086,
+      "impressions": 7,
+      "lat": 47.6750708379
+    },
+    {
+      "clicks": 0,
+      "lon": -122.191927369,
+      "impressions": 8,
+      "lat": 47.6794078529
+    },
+    {
+      "clicks": 0,
+      "lon": -122.18325334,
+      "impressions": 32,
+      "lat": 47.7068756144
+    },
+    {
+      "clicks": 0,
+      "lon": -122.203492743,
+      "impressions": 4,
+      "lat": 47.6822991962
+    },
+    {
+      "clicks": 0,
+      "lon": -122.177470653,
+      "impressions": 3,
+      "lat": 47.7097669577
+    },
+    {
+      "clicks": 0,
+      "lon": -122.212166773,
+      "impressions": 19,
+      "lat": 47.6765165096
+    },
+    {
+      "clicks": 0,
+      "lon": -122.204938414,
+      "impressions": 20,
+      "lat": 47.6779621812
+    },
+    {
+      "clicks": 0,
+      "lon": -122.200601399,
+      "impressions": 158,
+      "lat": 47.6808535245
+    },
+    {
+      "clicks": 0,
+      "lon": -122.190481698,
+      "impressions": 3,
+      "lat": 47.6678424796
+    },
+    {
+      "clicks": 0,
+      "lon": -122.181807668,
+      "impressions": 6,
+      "lat": 47.6996472561
+    },
+    {
+      "clicks": 0,
+      "lon": -122.189036026,
+      "impressions": 2,
+      "lat": 47.6779621812
+    },
+    {
+      "clicks": 0,
+      "lon": -122.193373041,
+      "impressions": 1,
+      "lat": 47.6779621812
+    },
+    {
+      "clicks": 0,
+      "lon": -122.202047071,
+      "impressions": 6,
+      "lat": 47.6794078529
+    },
+    {
+      "clicks": 0,
+      "lon": -122.190481698,
+      "impressions": 1,
+      "lat": 47.6736251663
+    },
+    {
+      "clicks": 0,
+      "lon": -122.17457931,
+      "impressions": 1,
+      "lat": 47.6851905395
+    },
+    {
+      "clicks": 1,
+      "lon": -122.199155728,
+      "impressions": 4,
+      "lat": 47.6851905395
+    },
+    {
+      "clicks": 0,
+      "lon": -122.180361996,
+      "impressions": 2,
+      "lat": 47.6880818828
+    },
+    {
+      "clicks": 0,
+      "lon": -122.190481698,
+      "impressions": 7,
+      "lat": 47.6750708379
+    },
+    {
+      "clicks": 0,
+      "lon": -122.197710056,
+      "impressions": 30,
+      "lat": 47.6794078529
+    },
+    {
+      "clicks": 0,
+      "lon": -122.200601399,
+      "impressions": 20,
+      "lat": 47.6794078529
+    },
+    {
+      "clicks": 0,
+      "lon": -122.212166773,
+      "impressions": 1,
+      "lat": 47.6822991962
+    },
+    {
+      "clicks": 0,
+      "lon": -122.202047071,
+      "impressions": 4,
+      "lat": 47.6837448679
+    },
+    {
+      "clicks": 0,
+      "lon": -122.202047071,
+      "impressions": 1,
+      "lat": 47.6692881513
+    },
+    {
+      "clicks": 0,
+      "lon": -122.200601399,
+      "impressions": 22,
+      "lat": 47.6750708379
+    },
+    {
+      "clicks": 0,
+      "lon": -122.177470653,
+      "impressions": 1,
+      "lat": 47.6794078529
+    },
+    {
+      "clicks": 0,
+      "lon": -122.196264384,
+      "impressions": 1,
+      "lat": 47.6794078529
+    },
+    {
+      "clicks": 0,
+      "lon": -122.190481698,
+      "impressions": 1,
+      "lat": 47.6822991962
+    },
+    {
+      "clicks": 0,
+      "lon": -122.178916325,
+      "impressions": 28,
+      "lat": 47.6822991962
+    },
+    {
+      "clicks": 0,
+      "lon": -122.186144683,
+      "impressions": 2,
+      "lat": 47.6779621812
+    },
+    {
+      "clicks": 0,
+      "lon": -122.204938414,
+      "impressions": 2,
+      "lat": 47.6591684497
+    },
+    {
+      "clicks": 0,
+      "lon": -122.210721101,
+      "impressions": 5,
+      "lat": 47.6765165096
+    },
+    {
+      "clicks": 0,
+      "lon": -122.204938414,
+      "impressions": 10,
+      "lat": 47.6750708379
+    },
+    {
+      "clicks": 0,
+      "lon": -122.17457931,
+      "impressions": 1,
+      "lat": 47.6822991962
+    },
+    {
+      "clicks": 0,
+      "lon": -122.193373041,
+      "impressions": 5,
+      "lat": 47.6635054646
+    },
+    {
+      "clicks": 0,
+      "lon": -122.210721101,
+      "impressions": 2,
+      "lat": 47.6779621812
+    },
+    {
+      "clicks": 0,
+      "lon": -122.187590354,
+      "impressions": 16,
+      "lat": 47.666396808
+    },
+    {
+      "clicks": 0,
+      "lon": -122.180361996,
+      "impressions": 1,
+      "lat": 47.6982015845
+    },
+    {
+      "clicks": 0,
+      "lon": -122.180361996,
+      "impressions": 2,
+      "lat": 47.7054299428
+    },
+    {
+      "clicks": 1,
+      "lon": -122.178916325,
+      "impressions": 10,
+      "lat": 47.7025385994
+    },
+    {
+      "clicks": 0,
+      "lon": -122.176024981,
+      "impressions": 2,
+      "lat": 47.6996472561
+    },
+    {
+      "clicks": 0,
+      "lon": -122.187590354,
+      "impressions": 1,
+      "lat": 47.6794078529
+    },
+    {
+      "clicks": 0,
+      "lon": -122.170242295,
+      "impressions": 1,
+      "lat": 47.6779621812
+    },
+    {
+      "clicks": 0,
+      "lon": -122.173133638,
+      "impressions": 2,
+      "lat": 47.6779621812
+    },
+    {
+      "clicks": 0,
+      "lon": -122.170242295,
+      "impressions": 5,
+      "lat": 47.6808535245
+    },
+    {
+      "clicks": 0,
+      "lon": -122.178916325,
+      "impressions": 1,
+      "lat": 47.6808535245
+    },
+    {
+      "clicks": 0,
+      "lon": -122.177470653,
+      "impressions": 1,
+      "lat": 47.6909732262
+    },
+    {
+      "clicks": 0,
+      "lon": -122.187590354,
+      "impressions": 1,
+      "lat": 47.6692881513
+    },
+    {
+      "clicks": 0,
+      "lon": -122.204938414,
+      "impressions": 13,
+      "lat": 47.6504944197
+    },
+    {
+      "clicks": 0,
+      "lon": -122.18325334,
+      "impressions": 2,
+      "lat": 47.6837448679
+    },
+    {
+      "clicks": 0,
+      "lon": -122.199155728,
+      "impressions": 18,
+      "lat": 47.6779621812
+    },
+    {
+      "clicks": 0,
+      "lon": -122.187590354,
+      "impressions": 2,
+      "lat": 47.6707338229
+    },
+    {
+      "clicks": 0,
+      "lon": -122.176024981,
+      "impressions": 3,
+      "lat": 47.6837448679
+    },
+    {
+      "clicks": 0,
+      "lon": -122.189036026,
+      "impressions": 2,
+      "lat": 47.6678424796
+    },
+    {
+      "clicks": 0,
+      "lon": -122.207829758,
+      "impressions": 6,
+      "lat": 47.6880818828
+    },
+    {
+      "clicks": 0,
+      "lon": -122.18325334,
+      "impressions": 2,
+      "lat": 47.7010929278
+    },
+    {
+      "clicks": 0,
+      "lon": -122.177470653,
+      "impressions": 11,
+      "lat": 47.7039842711
+    },
+    {
+      "clicks": 0,
+      "lon": -122.193373041,
+      "impressions": 2,
+      "lat": 47.6707338229
+    },
+    {
+      "clicks": 0,
+      "lon": -122.196264384,
+      "impressions": 1,
+      "lat": 47.6692881513
+    },
+    {
+      "clicks": 0,
+      "lon": -122.181807668,
+      "impressions": 1,
+      "lat": 47.6866362112
+    },
+    {
+      "clicks": 0,
+      "lon": -122.17457931,
+      "impressions": 4,
+      "lat": 47.6794078529
+    },
+    {
+      "clicks": 0,
+      "lon": -122.204938414,
+      "impressions": 5,
+      "lat": 47.6808535245
+    },
+    {
+      "clicks": 0,
+      "lon": -122.191927369,
+      "impressions": 2,
+      "lat": 47.6649511363
+    },
+    {
+      "clicks": 0,
+      "lon": -122.180361996,
+      "impressions": 1,
+      "lat": 47.6822991962
+    },
+    {
+      "clicks": 1,
+      "lon": -122.177470653,
+      "impressions": 15,
+      "lat": 47.6822991962
+    },
+    {
+      "clicks": 0,
+      "lon": -122.189036026,
+      "impressions": 4,
+      "lat": 47.6794078529
+    }
+  ]
+}

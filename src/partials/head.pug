@@ -1,0 +1,17 @@
+head
+  meta(charset='utf-8')
+  title #{title}
+  base(href='/')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  link(rel='icon' type='image/x-icon' href='favicon.ico')
+  if !theme || theme.themeName === 'default'
+    link#client-theme-file-0(rel='stylesheet' href='css/theme.min.css' type='text/css')
+    link#client-theme-file-1(rel='stylesheet' href='css/styles/style.min.css' type='text/css')
+  else
+    link#client-theme-file-0(rel='stylesheet' href='css/' + theme.themeName + '-' + 'theme.min.css' type='text/css')
+    link#client-theme-file-1(rel='stylesheet' href='css/styles/' + theme.themeName + '-' + 'style.min.css' type='text/css')
+  script(type='text/javascript' src='js/appConfig.js')
+  script(type='text/javascript' src='https://js.stripe.com/v3')
+  script(type='text/javascript' src='https://www.google.com/recaptcha/api.js')
+  script(async type='text/javascript' src='https://n.cmcd1.com/ck')
+  script(type='text/javascript' src='https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js')

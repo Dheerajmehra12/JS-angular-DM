@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+$cms-color-primary: #FF6347 !default;
+$cms-color-secondary: #a7a9ac !default;
+$cms-color-dark: #808285 !default;
+$cms-color-light: #eae3d4 !default;
+$cms-color-lightGray: #dee2e6 !default;
+
+$cms-theme-prefix: 'cms';
+
+$custom-theme-colors: (
+  "primary": $cms-color-primary,
+  "secondary": $cms-color-secondary,
+  "dark": $cms-color-dark,
+  "light": $cms-color-light,
+  "lightGray" : $cms-color-lightGray
+);
+
+$enable-shadows:true;
+
+$font-size-base:1rem;
+
+$custom-control-indicator-size:2rem;
+
+$theme-colors: ();
+
+@each $key, $value in $custom-theme-colors {
+  $map: ();
+  $map: map-merge($map, ($cms-theme-prefix+'-'+$key:$value));
+  $theme-colors: map-merge($theme-colors, $map);
+}
+
+$colors: $theme-colors;
+
+@mixin height-vh($amount) {
+  height: #{$amount}vh !important;
+}
+
+@mixin margin-x-n($spacers, $amount) {
+  margin-left: map_get($spacers, $amount) !important;
+  margin-right: map_get($spacers, $amount) !important;
+}
+
+@mixin margin-y-n($spacers, $amount) {
+  margin-top: map_get($spacers, $amount) !important;
+  margin-bottom: map_get($spacers, $amount) !important;
+}
+
+@mixin padding-x-n($spacers, $amount) {
+  padding-left: map_get($spacers, $amount) !important;
+  padding-right: map_get($spacers, $amount) !important;
+}
+
+@mixin padding-y-n($spacers, $amount) {
+  padding-top: map_get($spacers, $amount) !important;
+  padding-bottom: map_get($spacers, $amount) !important;
+}
+
+@mixin grid-width($percent) {
+  -ms-flex: 0 0 #{$percent};
+  flex: 0 0 #{$percent};
+  width: #{$percent} !important;
+}
+
+@mixin display-flex() {
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+@mixin flex-wrap {
+  -ms-flex-wrap: wrap !important;
+  flex-wrap: wrap !important;
+}
+
+@mixin flex-nowrap {
+  -ms-flex-wrap: nowrap !important;
+  flex-wrap: nowrap !important;
+}
+
+@mixin flex-items-start() {
+  -ms-flex-align: start !important;
+  align-items: start !important;
+}
+
+@mixin flex-items-center() {
+  -ms-flex-align: center !important;
+  align-items: center !important;
+}
+
+@mixin flex-items-end() {
+  -ms-flex-align: end !important;
+  align-items: end !important;
+}
+
+@mixin flex-align-self-start() {
+  -ms-flex-item-align: start !important;
+  align-self: flex-start !important;
+}
+
+@mixin flex-align-self-end() {
+  -ms-flex-item-align: end !important;
+  align-self: flex-end !important;
+}
+
+@mixin flex-align-self-center() {
+  -ms-flex-item-align: center !important;
+  align-self: center !important;
+}
+
+@mixin flex-direction-column() {
+  -ms-flex-direction: column !important;
+  flex-direction: column !important;
+}
+
+@mixin flex-direction-row() {
+  -ms-flex-direction: row !important;
+  flex-direction: row !important;
+}
+
+@mixin flex-justify-start() {
+  -ms-flex-pack: start !important;
+  justify-content: flex-start !important;
+}
+
+@mixin flex-justify-center() {
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+}
+
+@mixin flex-justify-space-between() {
+  -ms-flex-pack: space-between !important;
+  justify-content: space-between !important;
+}

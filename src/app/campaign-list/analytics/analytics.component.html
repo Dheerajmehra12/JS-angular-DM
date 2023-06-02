@@ -1,0 +1,22 @@
+<a (click)="backbutton()" class="btn btn-cms-primary" *ngIf="!reportData && !viewSample">{{'nav.back' | translate}}</a>
+<div class="d-flex w-100 justify-content-center text-center flex-column" style="min-height: 65vh;" *ngIf="!viewSample && !reportData">
+  <h3 id="report-result-msg">{{resultMessage}}</h3>
+  <a [routerLink]="['/', routeConstants.CAMPAIGN_LIST, routeConstants.CAMPAIGNS, campaignId, routeConstants.ANALYTICS]" id="report-sample-link" (click)="viewSampleReport()">{{'analytics.sampleReport' | translate}}</a>
+</div>
+<app-analytics-header #analyticsHeaderComponent id="camp-setup-header"
+                      class="row sticky-top bg-white py-2 d-print-none"
+                      style="z-index: 400 !important;"
+                      [pdfSupported]="pdfSupported" [excelSupported]="excelSupported"
+                      (pdfExport)="onPdfExport($event)"
+                      (excelExport)="onExcelExport($event)"
+                      *ngIf="reportData || viewSample" [activeTab]="activeTab" [tabs]="tabs" (tabChange)="onTabChange($event)">
+</app-analytics-header>
+<!-- // Print only elements starts -->
+<ng-container *ngIf="reportData">
+  <app-analytics-printonly-header class="row d-none my-2" *ngFor="let tab of tabs" [class.d-print-block]="activeTab===tab.name" [tab]="tab" [active]="tab.name===activeTab"></app-analytics-printonly-header>
+</ng-container>
+<!-- // Print only elements ends -->
+<app-analytics-dashboard *ngIf="(reportData && activeTab===analyticsTabs.DASHBOARD)" [dailyStats]="dailyStats" [deviceStats]="deviceStats" [overallStats]="overallStats" [locationStats]="locationStats"></app-analytics-dashboard>
+<app-analytics-reach *ngIf="(reportData && activeTab===analyticsTabs.REACH)" [locationStats]="locationStats"></app-analytics-reach>
+<div class="clearfix"></div>
+<a href="" id="export-download" class="d-none">{{'analytics.downloadFile' | translate}}</a>

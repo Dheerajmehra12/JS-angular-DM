@@ -1,0 +1,225 @@
+/* Analytics style starts */
+
+#module-analytics * {
+  font-family: 'Manrope', Arial, sans-serif !important;
+}
+
+.analytics-back-btn {
+  position: absolute;
+
+  @include media-breakpoint-down('sm') {
+    position: static;
+    margin-bottom: map_get($spacers, 2);
+  }
+}
+
+.tabsLayout {
+  cursor: pointer;
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid hsl(316, 40%, 24%);
+  border-radius: 45%;
+}
+
+.tabs {
+  display: inline-block;
+  color: map_get($colors, $cms-theme-prefix+'-primary') !important;
+  text-align: center;
+  cursor: pointer;
+}
+
+.active {
+  background-color: var(--cms-primary);
+  color: white;
+}
+
+.clicksNumbersBox {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+@mixin deviceStats {
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: auto;
+  color: white;
+  min-height: 106px;
+  padding-left: 75px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.byDevice {
+  background-image: url('https://cdn.cmcd1.com/magnet/assets/images/byDevice1.png');
+  background-color: #f8b52e;
+  border: solid 1px #f8b52e;
+
+  @include deviceStats;
+}
+
+.byAndroid {
+  background-image: url('https://cdn.cmcd1.com/magnet/assets/images/byAndroid1.png');
+  background-color: #76d02e;
+  border: solid 1px #76d02e;
+
+  @include deviceStats;
+}
+
+.byIos {
+  background-image: url('https://cdn.cmcd1.com/magnet/assets/images/byIos1.png');
+  background-color: #6084db;
+  border: solid 1px #6084db;
+
+  @include deviceStats;
+}
+
+.byDesktop {
+  background-image: url('https://cdn.cmcd1.com/magnet/assets/images/byDesktop1.png');
+  background-color: #e94233;
+  border: solid 1px #e94233;
+
+  @include deviceStats;
+}
+
+.device_numbers {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+.device_label {
+  font-size: 13px;
+  color: white;
+}
+
+.overall_stats_box {
+  vertical-align: top;
+  display: inline-block;
+  padding: 18px;
+}
+
+.overall_stats_img_box {
+  width: 35%;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.stats_header {
+  height: 50px;
+  background-color: lightgray;
+  padding: 12px;
+  border-bottom: 1px solid;
+
+  & a,
+  a:hover,
+  a:active {
+    color: inherit;
+  }
+}
+
+.view-stat-content p {
+  margin-bottom: 0;
+}
+
+.view-stat-content {
+  padding: 23px 10px;
+}
+
+.chartCanvas {
+  height: auto;
+  width: 100%;
+  margin-top: 10px;
+  object-fit: cover;
+}
+
+.view_stat {
+  width: 80%;
+  border: 1px solid;
+}
+
+.viewBox {
+  padding: 35px 25px 0 25px;
+}
+
+.click-box {
+  height: 110px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .view_stat img {
+    width: 74px;
+  }
+
+  .view-stat-content {
+    padding: 11px 10px;
+  }
+
+  .view_stat hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .chartCanvas {
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .view_stat .col-md-4 {
+    max-width: 100% !important;
+  }
+
+  .view_stat .col-md-8 {
+    max-width: 100% !important;
+  }
+
+  .view_stat {
+    width: 90%;
+  }
+
+  .viewBox {
+    padding: 35px 0 0 10px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .view_stat {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .view_stat .col-md-4 {
+    max-width: 30% !important;
+  }
+
+  .view_stat .col-md-8 {
+    max-width: 70% !important;
+  }
+
+  .viewBox {
+    padding: 25px 0 25px 10px;
+  }
+
+  .click-box {
+    height: 500px;
+  }
+
+  .clicksNumbersBox .col-md-4 {
+    max-width: 30% !important;
+  }
+
+  .clicksNumbersBox .col-md-8 {
+    max-width: 70% !important;
+  }
+
+  .click-box .col-md-3 {
+    margin-top: 20px;
+  }
+}

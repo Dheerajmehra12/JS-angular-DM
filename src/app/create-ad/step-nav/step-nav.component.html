@@ -1,0 +1,15 @@
+<div class="cms-adcreate-steps">
+  <div class="adcreate-step" *ngFor="let step of steps; index as $index" [ngClass]="{'completed':step.completed, 'current':step.current, 'disableNav': step.disable}" #adcreateStep>
+    <a class="step-nav" (click)="stepChanged(step)" [ngClass]="{'disableNav': step.disable}">
+    <span class="btn step-button">
+      <span *ngIf="!step.completed">{{step.number}}</span>
+      <img *ngIf="step.completed" src="assets/images/check.svg">
+    </span>
+      <p class="step-info">{{step.title}}</p>
+    </a>
+  </div>
+</div>
+<div class="text-right d-lg-none d-md-none d-sm-block">
+  <a (click)="prevStep()"><span class="mx-1 text-info">{{'nav.prev' | translate}}</span></a>
+  <a (click)="nextStep()"><span class="mx-1 text-info">{{'nav.next' | translate}}</span></a>
+</div>

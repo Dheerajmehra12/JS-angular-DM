@@ -1,0 +1,49 @@
+{
+  "status": 0,
+  "ecode": 0,
+  "edesc": null,
+  "response": [
+    {
+      "date": "2019-04-26",
+      "ctr": 7.6923,
+      "daterange": "26-26",
+      "clicks": 3,
+      "impressions": 39
+    },
+    {
+      "date": "2019-05-02",
+      "ctr": 0.4208,
+      "daterange": "27-2",
+      "clicks": 14,
+      "impressions": 3327
+    },
+    {
+      "date": "2019-05-08",
+      "ctr": 0.2828,
+      "daterange": "3-8",
+      "clicks": 14,
+      "impressions": 4950
+    },
+    {
+      "date": "2019-05-14",
+      "ctr": 0.3893,
+      "daterange": "9-14",
+      "clicks": 23,
+      "impressions": 5908
+    },
+    {
+      "date": "2019-05-20",
+      "ctr": 0.5673,
+      "daterange": "15-20",
+      "clicks": 31,
+      "impressions": 5464
+    },
+    {
+      "date": "2019-05-26",
+      "ctr": 0.5006,
+      "daterange": "21-26",
+      "clicks": 29,
+      "impressions": 5793
+    }
+  ]
+}

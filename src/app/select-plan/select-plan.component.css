@@ -1,0 +1,9 @@
+.select-plan-footer {
+  min-height: 13vh;
+  align-items: center;
+  font-size: 1.4rem;
+  text-align: left;
+  font-stretch: ultra-expanded;
+  padding-bottom: 1rem;
+}
+

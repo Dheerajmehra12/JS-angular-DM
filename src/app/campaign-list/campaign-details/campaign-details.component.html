@@ -1,0 +1,74 @@
+<div id="camp-setup-header" class="row sticky-top bg-white py-2 align-items-center">
+  <div class="col position-relative">
+    <a class="btn btn-cms-primary text-white p-abs-sm" routerLink="/campaign-list" >{{'nav.back' | translate}}</a>
+    <h3 class="text-center text-cms-primary w-100 mb-3">{{'campaign.campDetail' | translate}}</h3>
+  </div>
+  <hr class="w-100 my-1">
+</div>
+<div class="row justify-content-center" *ngIf="campaign">
+  <div class="col-lg-9 col-xl-8">
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped-cms-secondary">
+        <tbody>
+          <tr>
+            <td class="text-cms-primary">{{'campaign.campId' | translate}}</td>
+            <td>{{campaign.id}}</td>
+          </tr>
+          <tr>
+            <td class="text-cms-primary">{{'campaign.campaignName' | translate}}</td>
+            <td>{{campaign.campaignName}}</td>
+          </tr>
+          <tr>
+            <td class="text-cms-primary">{{'campaign.price' | translate}}</td>
+            <td><span class="text-cms-primary font-weight-bold">{{campaign.charge | currency : plansMap[campaign.planId].currency : 'symbol' : '0.0-2'}} </span>{{plansMap[campaign.planId].period | lowercase}}</td>
+          </tr>
+          <tr>
+            <td class="text-cms-primary">{{'summary.sdate' | translate}}</td>
+            <td>{{campaign.startDate}}</td>
+          </tr>
+          <tr>
+            <td class="text-cms-primary">{{'summary.edate' | translate}}</td>
+            <td>{{campaign.endDate}}</td>
+          </tr>
+          <tr>
+            <td class="text-cms-primary">{{'summary.landingPage' | translate}}</td>
+            <td>{{campaign.landingPage}}</td>
+          </tr>
+          <tr>
+            <td class="text-cms-primary">{{'summary.status' | translate}}</td>
+            <td>{{campaign.status | campaignStatus}}</td>
+          </tr>
+          <tr>
+            <td class="text-cms-primary">{{'summary.type' | translate}}</td>
+            <td>{{campaign.targetingType | titlecase}}</td>
+          </tr>
+          <tr *ngIf="campaign.radiusTargeting">
+            <td class="text-cms-primary">{{'summary.targetRad' | translate}}</td>
+            <td>{{campaign.radiusTo}} {{distanceUnits.MILES}}</td>
+          </tr>
+          <tr>
+            <td class="text-cms-primary text-left font-weight-bold" colspan="2">{{'summary.targetLoc' | translate}}</td>
+          </tr>
+        <tr>
+          <td colspan="2">
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <thead class="thead-cms-secondary"><tr><th>{{'summary.addr' | translate}}</th></tr></thead>
+                <tbody>
+                <tr *ngFor="let location of campaign.addresses">
+                  <td>{{location | targetLocationFormat | titlecase}}</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<h4 class="text-center text-cms-primary w-100 my-3" *ngIf="campaign">{{'summary.commercial' | translate}}</h4>
+<div class="row align-items-center justify-content-center" *ngIf="campaign">
+  <app-player class="col-lg-8 col-xl-6 position-relative mw-100 my-2 text-center my-2" style="height: 56.25%;" videoUrl="{{campaign.videoUrl}}" footerBannerUrl="{{campaign.bottomBannerUrl}}" [showFooterBanner]="campaign.overlaybanner"></app-player>
+</div>

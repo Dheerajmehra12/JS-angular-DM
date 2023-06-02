@@ -1,0 +1,32 @@
+<div class="col-12 position-relative text-center" style="height: 56.25%;">
+  <img src="/assets/images/TV.png" style="width: 100%; height: 100%; object-fit: contain;" />
+  <div class="col-12 text-center position-absolute text-white-50" style="top: calc(50% - 1.5rem); left: 0;" *ngIf="!footerBannerUrl || !videoUrl || videoLoading">
+    {{'player.pleaseWait' | translate}}
+  </div>
+  <div *ngIf="footerBannerUrl && videoUrl" id="playBtn" class="position-absolute" style="left: calc((100% - 32px)/2); top: calc((100% - 32px)/2); z-index: 6; cursor: pointer; color: white;" (click)="playVideo()" #playBtn>
+    <svg class="bi" width="32" height="32" fill="currentColor">
+      <use xlink:href="css/bootstrap-icons.svg#play-circle"></use>
+    </svg>
+  </div>
+  <div *ngIf="footerBannerUrl && videoUrl" id="pauseBtn" class="position-absolute" style="left: calc((100% - 32px)/2); top: calc((100% - 32px)/2); z-index: 7; cursor: pointer; color: white; display: none;" (click)="pauseVideo()" #pauseBtn>
+    <svg class="bi" width="32" height="32" fill="currentColor">
+      <use xlink:href="css/bootstrap-icons.svg#pause-circle"></use>
+    </svg>
+  </div>
+  <div *ngIf="footerBannerUrl && videoUrl" class="col-12 position-absolute text-center"
+       style="height: 100%; z-index: 1; top: 0; left: 0;">
+    <div class="position-relative w-100 h-100" style="padding: 3% 2.2%;">
+      <div style="width:100%; left: 0; top: 0; z-index: 2; padding: inherit; padding-bottom: 0;" class="position-absolute" [ngStyle]="(!showFooterBanner)?{'height':'94%'}:{'height':'78.12%'}">
+        <video muted id="ctvVideo" class="w-100 mh-100" style="object-fit: contain;" #videoElement (ended)="onVideoEnd()" (loadeddata)="onVideoLoadEnd()" (load)="onVideoLoadStart()">
+          <source id="source" [src]="videoUrl" type="video/mp4">{{'player.error' | translate}}.
+        </video>
+      </div>
+      <div style="width:100%; left: 0; bottom: 0; z-index: 3; padding: inherit;  padding-top: 0;" class="position-absolute" #footerBanner [ngStyle]="(!showFooterBanner)?{'display':'none'}:{'display':'inline'}">
+        <img id="videoBannerCanvas" class="w-100" [src]="footerBannerUrl" style="object-fit: cover;" *ngIf="!useHtml" />
+        <ng-container *ngIf="useHtml && bannerTemplate">
+          <app-footer-template class="w-100" style="object-fit: cover;" [template]="bannerTemplate"></app-footer-template>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</div>

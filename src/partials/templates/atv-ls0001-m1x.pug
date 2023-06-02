@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        include base-style
+        style.
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+            .#{id}-atv-banner {
+              margin: 0 !important;
+              padding: 0 !important;
+              outline: none;
+              text-decoration: none;
+              width: var(--creative-width);
+              height: var(--creative-height);
+            }
+
+            .#{id}-atv-banner-container {
+              width: 100%;
+              height: var(--creative-height);
+              display: flex;
+              align-items: center;
+              background: var(--brand-color);
+            }
+
+            .#{id}-atv-banner-left {
+              width: 19.7916666667%;
+              height: 100%;
+              padding: 0.5rem;
+            }
+
+            .#{id}-atv-banner-middle {
+              width: 48.2291666666%;
+              height: 100%;
+              background-image: url("https://cdn.cmcd1.com/ctv/assets/templates/images/atv-ls0001-m1x-bg.png");
+              background-repeat: no-repeat;
+              background-size: 100% 100%;
+              display: flex;
+              align-items: center;
+            }
+
+            .#{id}-atv-banner-middle div.atv-title {
+              font-family: "Manrope", Arial;
+              font-weight: 700;
+              color: var(--brand-color);
+              font-size: 4rem;
+              line-height: 4.5rem;
+              text-align: center;
+              text-transform: uppercase;
+              width: 100%;
+            }
+
+            .#{id}-atv-banner-right {
+              display: flex;
+              align-items: center;
+              flex-wrap: wrap;
+              width: 31.9791666667%;
+              padding: 0 1%;
+              color: #fff;
+              font-size: 1.5rem;
+              font-family: "Manrope", Arial;
+              text-align: center;
+            }
+    body
+        a(href="", target='_blank')&attributes({'class': id+'-atv-banner'})
+          div&attributes({'class': id+'-atv-banner-container'})
+            div&attributes({'class': id+'-atv-banner-left'})
+              img(src='https://s3.amazonaws.com/cd_cdn/hsf_logos/CA-1722x800' style='width:100%; height:100%; object-fit: contain;')
+            div&attributes({'class': id+'-atv-banner-middle'})
+              div.atv-title Be known for the company you keep
+            div&attributes({'class': id+'-atv-banner-right'})
+              div(style='width:100%;') floridanetworkrealtycareers.com
+              div(style='width:100%; font-weight:bold;') (904) 296-6400

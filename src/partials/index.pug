@@ -1,0 +1,11 @@
+doctype html
+html(lang='en')
+    include head.pug
+    body
+      app-spinner
+      app-root Loading...
+      if (typeof (model) !== 'undefined')
+        script.
+          window.sessionStorage.setItem('ls.ssoData', '!{JSON.stringify(model)}');
+          window.location.href = '/auth/sso';
+      | !{angularScipts}
