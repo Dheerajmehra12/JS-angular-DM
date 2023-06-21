@@ -12,11 +12,9 @@ import {Router} from '@angular/router';
 import {NGXLogger} from 'ngx-logger';
 import {WebStorageService} from '../services/web-storage.service';
 import {StorageKeys} from '../services/common/constants/storage-keys';
-import { TranslateService } from '../services/translate';
 import {ThemingService} from '../services/theming.service';
 import {RouteConstants} from '../services/common/constants/route-constants';
 import {Location} from '@angular/common';
-import {CampaignListService} from '../campaign-list/campaign-list.service';
 import { AppConstant } from '../services/common/constants/app-constant';
 import {DialogComponent, DialogData, DialogEvent, DialogEventType} from '../shared/dialog/dialog.component';
 declare var $: any;
@@ -57,13 +55,10 @@ export class HeaderComponent implements OnInit, AfterViewInit {
               private logger: NGXLogger,
               private storageService: WebStorageService,
               private themingService: ThemingService,
-              private location: Location,
-              private campaignListService: CampaignListService,
-              private _translate: TranslateService) {
+              private location: Location,) {
   }
 
   ngOnInit() {
-    this._translate.use(localStorage.getItem('language'));
     if (this.router.url.includes(RouteConstants.SWITCH_APP)) {
       this.menuEnabled = false;
     }else {
@@ -76,9 +71,8 @@ export class HeaderComponent implements OnInit, AfterViewInit {
       this.setAgentInfo();
     });
     this.themingService.getTheme().subscribe((theme) => this.theme = theme);
-    this.campaignListService.getCampaignsCount().subscribe((campaignCount) => this.campaignCount = campaignCount);
     this.getLoggedInTitleText();
-    var title = this._translate.translate('targeting.continueMsg');
+    var title = ''
     this.confirmSwitchProfileDialogData = {
         title: `<div class="col-12">`+title+`</div>`,
         options: {
@@ -211,7 +205,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
       if(this.displayProfileMenu()) {
           var profileText = this.storageService.get(StorageKeys.PROFILE_TEXT);
           if((profileText === '' || profileText === null)) {
-              profileText = this._translate.translate("header.team");
+              profileText = '';
               this.storageService.set(StorageKeys.PROFILE_TEXT, AppConstant.TEAM_PROFILE_TEXT_MENU_ITEM);
           }
           return profileText;
@@ -223,24 +217,10 @@ export class HeaderComponent implements OnInit, AfterViewInit {
       if(this.displayProfileMenu()) {
         var profileText = this.storageService.get(StorageKeys.PROFILE_TEXT);
         if(profileText === AppConstant.PERSONAL_PROFILE_TEXT_MENU_ITEM) {
-          this.campaignListService.fetchTeamByContactId().subscribe((teamData) => {
-            if(teamData['team_members'].length > 0 && Object.keys(teamData['team_profile']).length > 0) {
-               this.storageService.set("team_members", teamData['team_members']);
-               this.storageService.set("team_profile", teamData['team_profile']);
-               this.loggedInTitleText = this._translate.translate("header.loggedInto") +" "+teamData['team_profile'].teamName;
-               this.campaignMenuText = this._translate.translate('header.teamCampaigns');
-               this.agentInfo.agentPhoto = teamData['team_profile'].imageUrl;
-            } else {
-              this.storageService.set("team_members", '');
-              this.storageService.set("team_profile", '');
-              this.loggedInTitleText = '';
-              this.campaignMenuText = this._translate.translate('header.myCampaigns');
-            }
-          });
+          };
         } else {
           this.loggedInTitleText = '';
-          this.campaignMenuText = this._translate.translate('header.myCampaigns');
         }
       }
-    }
+    
 }

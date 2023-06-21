@@ -149,6 +149,7 @@ module.exports = function (express, app) {
         listingDetails:templateService.listingDetails,
         exportHeatMap:analyticsService.exportHeatMap,
 
-        myLoginAPI: loginService.myLoginAPI
+        myLoginAPI: loginService.myLoginAPI,
+        createAccount:loginService.createAccount
     };
 };

@@ -102,6 +102,7 @@ module.exports=function (express, app) {
 
         // new ap
         myLoginAPI:services.myLoginAPI,
+        createAccount:services.createAccount,
         themeHandler: function (request, response) {
             response.json(getTheme(request));
         },

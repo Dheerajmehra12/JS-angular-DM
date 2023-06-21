@@ -12,39 +12,10 @@ declare const appConfig: any;
 
 const appRoutes: Routes = [
   {
-    path: RouteConstants.SELECT_PLAN,
-    loadChildren: () => import('./select-plan/select-plan.module').then(m => m.SelectPlanModule),
-    data: {auth: false},
-    // canActivate: [AuthGuard]
-  },
-  {
     path: RouteConstants.PROFILE,
     loadChildren: () => import('./personal-profile/personal-profile.module').then(m => m.PersonalProfileModule),
     data: {auth: false},
     // canActivate: [AuthGuard]
-  },
-  {
-    path: RouteConstants.CREATE_AD,
-    loadChildren: () => import('./create-ad/create-ad.module').then(m => m.CreateAdModule),
-    canActivate: [AuthGuard],
-    data: {auth: true}
-  },
-  {
-    path: RouteConstants.PAYMENT_DONE,
-    loadChildren: () => import('./payment-done/payment-done.module').then(m => m.PaymentDoneModule),
-    data: {auth: true},
-    canActivate: [AuthGuard]
-  },
-  {
-    path: RouteConstants.CAMPAIGN_LIST,
-    loadChildren: () => import('./campaign-list/campaign-list.module').then(m => m.CampaignListModule),
-    data: {auth: true},
-    canActivate: [AuthGuard]
-  },
-  {
-    path: RouteConstants.CREATIVES,
-    loadChildren: () => import('./template/template.module').then(m => m.TemplateModule),
-    data: {auth: false}
   },
   {path: RouteConstants.AUTH, component: AuthComponent, children: AUTH_ROUTES, data: {auth: false}},
   {path: RouteConstants.ROOT, redirectTo: `/${RouteConstants.PROFILE}`, pathMatch: 'full', data: {auth: false}},

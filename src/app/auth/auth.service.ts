@@ -53,22 +53,22 @@ export class AuthService {
     }
   }
 
-  ssoLogin(token, code, sourcePortal, refreshToken) {
-    this.storageService.clearAllStorage();
-    let headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
-    headers = headers.set("rt", refreshToken);
-    return this.http.get<ApiResponse<any>>(`/api/proxy/ctv/fetchtokendata/v1/${code}`, {
-      headers
-    }).pipe(mergeMap((resp) => {
-      if (resp.status === 0) {
-        this.logger.info("Response for fetch token recieved ["+JSON.stringify(resp)+"]")
-        this.setAuthData(resp, sourcePortal);
-        return Observable.of(resp.status);
-      }else{
-        return throwError(new HttpErrorResponse({error: resp, headers, status: 401, statusText: 'UnAuthorized'}));
-      }
-    }));
-  }
+  // ssoLogin(token, code, sourcePortal, refreshToken) {
+  //   this.storageService.clearAllStorage();
+  //   let headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
+  //   headers = headers.set("rt", refreshToken);
+  //   return this.http.get<ApiResponse<any>>(`/api/proxy/ctv/fetchtokendata/v1/${code}`, {
+  //     headers
+  //   }).pipe(mergeMap((resp) => {
+  //     if (resp.status === 0) {
+  //       this.logger.info("Response for fetch token recieved ["+JSON.stringify(resp)+"]")
+  //       this.setAuthData(resp, sourcePortal);
+  //       return Observable.of(resp.status);
+  //     }else{
+  //       return throwError(new HttpErrorResponse({error: resp, headers, status: 401, statusText: 'UnAuthorized'}));
+  //     }
+  //   }));
+  // }
 
   getSsoToken(portalName: string, username: string, password: string) {
     let loginUrl = '/api/proxy';

@@ -53,14 +53,17 @@ export class HttpClientInterceptorService implements HttpInterceptor {
         this.logger.debug('HTTP Interceptor Starting spinner');
         this.spinnerService.show();
       }
-      return next.handle(this.addToken(request)).finally(() => {
-        this.pendingRequests--;
-        if (this.pendingRequests <= 0) {
-          if (!skipSpinner) {
-            this.logger.debug('HTTP Interceptor Closing spinner');
-            this.spinnerService.close();
-          }
-        }}).pipe(timeout(timeoutValueNumeric),
+      return next.handle(this.addToken(request)).pipe(finalize(
+        // Code to execute after the request is complete
+        (() => {
+          this.pendingRequests--;
+          if (this.pendingRequests <= 0) {
+            if (!skipSpinner) {
+              this.logger.debug('HTTP Interceptor Closing spinner');
+              this.spinnerService.close();
+            }
+      }}))
+      ).pipe(timeout(timeoutValueNumeric),
         catchError((error: HttpErrorResponse) => {
           return this.handleErrors(error, request, next);
         }));

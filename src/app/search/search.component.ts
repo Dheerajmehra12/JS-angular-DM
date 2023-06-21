@@ -11,12 +11,6 @@ declare const $: any;
 
 export class SearchComponent implements OnInit {
 
-  @Input() criteriaList = [
-     this.util.SearchCriteria('name', 'Campaign Name Contains', 'campaignName',''),
-     this.util.SearchCriteria('id', 'Campaign Id Equals', 'campaignId',''),
-  ];
-  @Input() selectedCriteria = this.util.SearchCriteria('name', 'Campaign Name Contains', 'campaignName',''); 
-  @Output() onSearchUpdate: EventEmitter<any> = new EventEmitter<any>();
   constructor(
     public util: UtilityService ,
     private inputControlRef: ElementRef<HTMLInputElement> ,
@@ -25,6 +19,13 @@ export class SearchComponent implements OnInit {
     public searchTerm:string
     public searchTags:Array<any>
     public tag:any
+
+    @Input() criteriaList = [
+      this.util.SearchCriteria('name', 'Campaign Name Contains', 'campaignName',''),
+      this.util.SearchCriteria('id', 'Campaign Id Equals', 'campaignId',''),
+   ];
+   @Input() selectedCriteria = this.util.SearchCriteria('name', 'Campaign Name Contains', 'campaignName',''); 
+   @Output() onSearchUpdate: EventEmitter<any> = new EventEmitter<any>();
 
   ngOnInit(): void {
     this.searchTags = []

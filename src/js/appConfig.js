@@ -16,7 +16,7 @@
         // almUrl: '{ALM_SSO_URL}',
         // almAdminUrl: '{ALM_SSO_URL_ADMIN}',
         // atmUrl: '{ATM_SSO_URL}',
-        appUrl: 'http://localhost:9091/select-plan',
+        appUrl: 'http://localhost:9999/select-plan',
         // absUrl: '{ABS_SSO_URL}',
         appName: 'Angular-DM',
         appDisplayName: 'app',
@@ -36,7 +36,7 @@
         // almUrl: '{ALM_SSO_URL}',
         // almAdminUrl: '{ALM_SSO_URL_ADMIN}',
         // atmUrl: '{ATM_SSO_URL}',
-        appUrl: 'http://localhost:9091/select-plan',
+        appUrl: 'http://localhost:9999/select-plan',
         // absUrl: '{ABS_SSO_URL}',
         appName: 'Angular-DM',
         appDisplayName: 'app',
@@ -56,7 +56,7 @@
         // almUrl: '{ALM_SSO_URL}',
         // almAdminUrl: '{ALM_SSO_URL_ADMIN}',
         // atmUrl: '{ATM_SSO_URL}',
-        appUrl: 'http://localhost:9091/select-plan',
+        appUrl: 'http://localhost:9999/select-plan',
         // absUrl: '{ABS_SSO_URL}',
         appName: 'Angular-DM',
         appDisplayName: 'app',
@@ -71,7 +71,7 @@
       // appConfig['staging'].almUrl='{ALM_SSO_URL}';
       // appConfig['staging'].almAdminUrl = '{ALM_SSO_URL_ADMIN}';
       // appConfig['staging'].atmUrl='{ATM_SSO_URL}';
-      appConfig['staging'].appUrl='http://localhost:9091/select-plan';
+      appConfig['staging'].appUrl='http://localhost:9999/select-plan';
       // appConfig['staging'].absUrl='{ABS_SSO_URL}';
       // appConfig['staging'].ssoBindingRedirect='{SSO_BINDING_REDIRECT}';
       appConfig['staging'].appName='Angular-DM';

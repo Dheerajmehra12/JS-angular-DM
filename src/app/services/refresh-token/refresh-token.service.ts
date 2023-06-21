@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {RequestOptions, Headers, Http} from '@angular/http';
 import {NGXLogger} from 'ngx-logger';
-import {HttpClient, HttpContext} from '@angular/common/http';
+import {HttpClient, HttpContext,HttpHeaders} from '@angular/common/http';
 import {AUTH_REQUIRED} from '../token-interceptor/http-client-interceptor.service';
 import {ApiResponse} from '../common/api-response';
 
@@ -14,11 +14,10 @@ export class RefreshTokenService {
   }
 
   refreshToken(token) {
-    this.logger.info('Refresh Token Reached');
-    const body = {refreshtoken: token};
-    const headers = new Headers({'Content-Type': 'application/json'});
-    const options = new RequestOptions({headers});
-    return this.http.post('/api/proxy/ctv/refreshtoken/v1', body, options);
+const body = {refreshtoken: token };
+const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
+const options = { headers };
+return this.httpClient.post('/api/proxy/ctv/refreshtoken/v1', body, options);
   }
 
   refreshTokenV1(token) {

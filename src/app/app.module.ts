@@ -4,16 +4,15 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {AuthModule} from './auth/auth.module';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
-import {HTTP_REQ_TIMEOUT, TokenInterceptorService, httpFactory} from './services/token-interceptor/token-interceptor.service';
+// import {HTTP_REQ_TIMEOUT, TokenInterceptorService, httpFactory} from './services/token-interceptor/token-interceptor.service';
 import {RefreshTokenService} from './services/refresh-token/refresh-token.service';
-import {HttpModule, RequestOptions, XHRBackend} from '@angular/http';
+// import {HttpModule, RequestOptions, XHRBackend} from '@angular/http';
 import {Router} from '@angular/router';
 import {FormsModule} from '@angular/forms';
 // import {LocationService} from './create-ad/targeting/location/location.service';
-import {MediaService} from './create-ad/media/media.service';
+// import {MediaService} from './create-ad/media/media.service';
 import {NotfoundComponent} from './notfound/notfound.component';
 import {SpinnerComponent} from './shared/spinner/spinner.component';
-import { TRANSLATION_PROVIDERS, TranslatePipe, TranslateService }          from "./services/translate";
 import {SpinnerService, spinnerFactory} from './shared/spinner/spinner.service';
 import {
   DEFAULT_TIMEOUT,
@@ -35,6 +34,7 @@ import { AppConstant } from './services/common/constants/app-constant';
 import {RouteConstants} from './services/common/constants/route-constants';
 export const ALERT_TIMEOUT: InjectionToken<number> = new InjectionToken<number>('alertTimeout');
 declare const appConfig: any;
+const HTTP_REQ_TIMEOUT = 60000;
 
 @NgModule({
   declarations: [
@@ -45,9 +45,9 @@ declare const appConfig: any;
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
-    HttpModule,
     HttpClientModule,
     AppRoutingModule,
+    // HttpModule,
     AuthModule,
     FormsModule,
     LoggerModule.forRoot(environment.loggerConfig),
@@ -74,19 +74,16 @@ declare const appConfig: any;
       useFactory: spinnerFactory,
       deps: [ComponentFactoryResolver, ApplicationRef, Injector],
     },
-    {
-      provide: TokenInterceptorService,
-      useFactory: httpFactory,
-      deps: [XHRBackend, RequestOptions, RefreshTokenService, Router, SpinnerService, NGXLogger, WebStorageService]
-    },
+    // {
+    //   provide: TokenInterceptorService,
+    //   useFactory: httpFactory,
+    //   deps: [XHRBackend, RequestOptions, RefreshTokenService, Router, SpinnerService, NGXLogger, WebStorageService]
+    // },
     RefreshTokenService,
     UtilityService,
-    MediaService,
     Title,
     Location,
-    CurrencyPipe,
-    TRANSLATION_PROVIDERS,
-    TranslateService
+    CurrencyPipe
   ],
 })
 export class AppModule implements DoBootstrap{
@@ -128,7 +125,6 @@ export class AppModule implements DoBootstrap{
               private authService: AuthService,
               private logger: NGXLogger,
               private router: Router,
-              private _translate: TranslateService,
               ) {
   }
   ngDoBootstrap(appRef: ApplicationRef): void {
@@ -141,16 +137,16 @@ export class AppModule implements DoBootstrap{
 
     let ob$Init: Observable<any> = null;
     if (ssoParams.e && ssoParams.l && ssoParams.c && ssoParams.t) {
-      ob$Init = this.authService.ssoLogin(ssoParams.t, ssoParams.c, ssoParams.sourcePortal, ssoParams.refreshToken).pipe(mergeMap((ssoResp) => {
-        return this.loadStyle().pipe(map((loaded) => {
-          return {styleLoaded: loaded, authResp: ssoResp, authSuccess: true, authError: null, isSSo: true};
-        }));
-      }), catchError((errorSso) => {
-        this.logger.error('errorSso', errorSso);
-        return this.loadStyle( ).pipe(map((loaded) => {
-          return {styleLoaded: loaded, authResp: null, authSuccess: false, authError: errorSso, isSSo: true};
-        }));
-      }));
+      // ob$Init = this.authService.ssoLogin(ssoParams.t, ssoParams.c, ssoParams.sourcePortal, ssoParams.refreshToken).pipe(mergeMap((ssoResp) => {
+      //   return this.loadStyle().pipe(map((loaded) => {
+      //     return {styleLoaded: loaded, authResp: ssoResp, authSuccess: true, authError: null, isSSo: true};
+      //   }));
+      // }), catchError((errorSso) => {
+      //   this.logger.error('errorSso', errorSso);
+      //   return this.loadStyle().pipe(map((loaded) => {
+      //     return {styleLoaded: loaded, authResp: null, authSuccess: false, authError: errorSso, isSSo: true};
+      //   }));
+      // }));
     } else {
       ob$Init =  this.loadStyle().pipe(map((loaded) => {
         return {styleLoaded: loaded, authResp: null, authSuccess: false, authError: null, isSSo: false};

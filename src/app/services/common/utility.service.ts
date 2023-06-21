@@ -1,13 +1,12 @@
 import {Injectable} from '@angular/core';
 import {AppConstant} from './constants/app-constant';
-import {TokenInterceptorService} from '../token-interceptor/token-interceptor.service';
+// import {TokenInterceptorService} from '../token-interceptor/token-interceptor.service';
 import {NGXLogger} from 'ngx-logger';
 
 
 @Injectable()
 export class UtilityService {
   constructor(
-    private http: TokenInterceptorService,
     private logger: NGXLogger,
   ) {
 
@@ -236,7 +235,7 @@ removeCriteria = function(list, selectedCriteria) {
   return list;
 };
 copyCriteria = function (selectedCriteria) {
-  return new UtilityService(this.TokenInterceptorService,this.logger).SearchCriteria(selectedCriteria.type, selectedCriteria.description, selectedCriteria.field, selectedCriteria.value);
+  return new UtilityService(this.logger).SearchCriteria(selectedCriteria.type, selectedCriteria.description, selectedCriteria.field, selectedCriteria.value);
 };
 newInstance = function (selectedCriteria) {
   return this.copyCriteria(selectedCriteria);

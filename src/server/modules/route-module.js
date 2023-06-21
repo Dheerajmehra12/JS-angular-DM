@@ -46,11 +46,13 @@ module.exports=function (express, app) {
     app.get('/api/reviewListing',api.reviewListing);
     app.get('/api/listingDetails/:listingId',api.listingDetails);
     // app.post('/api/cardList', api.stripeCardList);
+    app.post('/api/login/v1',api.myLoginAPI);
+    app.post('/api/create/v1',api.createAccount);
     app.get('/api/sso', api.ssoHandler);
     app.post('/hsf/acs/consume', saml_sso_api.consume_assertion);
     app.post('/rews/acs/consume', saml_sso_api.consume_assertion_rews);
     app.use('*', api.requestHandler);
     app.use('/samples', api.jsonFileMissingErrorHandler);
     app.use(api.errorHandler);
-    app.post('/api/login',api.myLoginAPI);
+    
 };
